@@ -12,7 +12,7 @@
     card.classList.add('card');
 
     card.innerHTML = `
-        <img src="\\images\\Book ${i+1}.jpg" alt="Book 1">
+        <img src=".\\images\\Book ${i+1}.jpg" alt="Book 1">
         <div class="content">
           <p class="section">Featured Book</p>
           <p class="title">Book Title</p>
@@ -35,7 +35,7 @@
     card.classList.add('card');
 
     card.innerHTML = `
-        <img src="\\images\\Book ${i+1}.jpg" alt="Book 1">
+        <img src=".\\images\\Book ${i+1}.jpg" alt="Book 1">
         <div class="content">
           <p class="section">Featured Book</p>
           <p class="title">Book Title</p>
