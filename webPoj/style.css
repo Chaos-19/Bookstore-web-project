@@ -1,0 +1,564 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  border: 1px solid red;
+  background: #FFE300;
+  overflow-x: hidden;
+}
+
+/* Nav bar*/
+.top-nav {
+  padding: 1rem .5rem;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  /*  display: none;*/
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #747CD0;
+  width: 100%;
+  padding: 1.2rem 0;
+  opacity: 0;
+}
+
+
+
+.nav-link ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-flow: column nowrap;
+}
+
+.nav-link ul li a {
+  font-size: 21px;
+}
+
+.menu-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.drawer>div {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: #000;
+}
+
+.account {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(15px);
+  z-index: 999;
+
+}
+
+.cancel {
+  position: absolute;
+  left: 95%;
+  color: red;
+  background: transparent;
+  font-size: 45px;
+
+}
+
+.form-container {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.form-container span {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+.signIn {
+  margin: 15px;
+}
+
+.signIn p {
+  text-align: center;
+}
+
+.signIn label {
+  margin: 20px 0 0;
+}
+
+.form-container input {
+  font-size: 25px;
+  width: 100%;
+  padding: 15px 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+#indicator {
+  width: 100px;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+  transition: 1s;
+}
+
+
+/*
+account-page {
+  padding: 50px 0;
+  background: radial-gradient(#fff, #ffd6d6);
+}
+.form-container {
+  background: #fff;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.form-container span {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+.form-btn {
+  display: inline-block;
+}
+.form-container form {
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: 1s;
+}
+form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+
+form .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+form .btn:focus {
+  outline: none;
+}
+#signInForm {
+  left: -300px;
+}
+#signUpForm {
+  left: 0px;
+}
+form a {
+  font-size: 12px;
+}
+#indicator {
+  width: 100px;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+  transition: 1s;
+}
+
+
+
+*/
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+  .top-nav {
+    justify-content: space-around;
+  }
+
+  .menu {
+    flex: 0.7;
+    justify-content: space-around;
+
+  }
+
+  .nav-link {
+    position: relative;
+    opacity: 1;
+    background: transparent;
+    color: white;
+  }
+
+  .nav-link ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .drawer {
+    display: none;
+  }
+}
+
+/*Header Content*/
+.header-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content .col-1 {
+  text-align: center;
+  padding: 1.6rem 0;
+}
+
+.header-content .col-1>h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.header-content .col-1 p {
+  margin: 1rem 0 1.5rem;
+}
+
+.header-content .col-1 .btn {
+  font-size: 22px;
+  background: #FF4600;
+  color: black;
+  padding: 5px 20px;
+  border-radius: 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content .col-1 .btn:hover {
+  padding: 5px;
+  font-size: 22px;
+  background: #fff;
+}
+
+.header-content .col-2 {
+  padding: 5rem 0;
+}
+
+@media screen and (min-width: 600px) {
+
+  .header-content {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
+
+/*  featured sections */
+.main {
+  padding: 3rem 0;
+}
+
+.heading {
+  padding: 3rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.heading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 0.01rem;
+  background: #7A0AFF;
+  z-index: -1;
+}
+
+.heading span {
+  font-size: 1.3rem;
+  padding: 1rem;
+  color: black;
+  border: 1px solid;
+  background: #fff;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+.books-card,
+.books-best {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  /*  flex-flow: column wrap;*/
+  gap: 20px;
+  /* animation: slide-in 15s linear infinite;
+  */
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+.card {
+  flex-shrink: 0;
+  margin-right: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(131, 131, 131, 1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.content {
+  padding: 16px;
+}
+
+.section {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.author {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.origi {
+  text-decoration: line-through;
+  font-size: 12px;
+  color: #999;
+}
+
+.add-to-cart {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049;
+}
+
+.stars {
+  font-size: 25px;
+  color: gold;
+}
+
+
+/* Review section */
+.review-wrapper {
+  padding: 1.7rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-box {
+  border: 2px solid mediumseagreen;
+  border-radius: 15px;
+  text-align: center;
+  padding: 1.3rem;
+  margin: 0.7rem;
+  box-shadow: 4px 0 8px rgba(67, 67, 67, 0.4);
+  transition: all 1.2s;
+
+}
+
+.review-box:hover {
+  transform: translateY(-25px);
+}
+
+.review-box img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-box p {
+  margin: 10px 0 0;
+}
+
+@media screen and (min-width: 600px) {
+
+  .review-wrapper {
+    flex-direction: row;
+  }
+
+}
+
+
+/* footer Section*/
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #fff;
+  background: #000;
+}
+
+.foot-wrapper {
+  text-align: centre;
+  padding: 0 2rem;
+
+
+  display: grid;
+  grid-template-columns: 1fr;
+  /*display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;*/
+}
+
+.foot-col-1 {
+  text-align: center;
+  padding: 1rem;
+
+}
+
+.foot-col-1 .icons {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.foot-col-1 img {
+  width: 30%;
+  object-fit: contain;
+  margin: 0.4rem auto;
+}
+
+.footer-col-2 {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-col-3,
+.footer-col-4 {
+  padding: 1.5rem;
+  text-align: center;
+  margin: 1.2rem;
+
+}
+
+footer hr {
+  margin: 20px 0 20px;
+}
+
+@media screen and (min-width :600px) {
+
+  .foot-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 150px 150px;
+    justify-content: space-evenly;
+  }
+
+  .foot-col-1 {}
+
+  .footer-col-3,
+  .footer-col-4 {
+    margin: 0;
+
+
+  }
+
+}
