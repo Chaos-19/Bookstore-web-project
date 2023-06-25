@@ -57,12 +57,13 @@
   document.querySelector('.sign').addEventListener('click', (e) => {
 
     signInPage.style.display = "flex"
-
+    document.body.style.overflowY = "hidden";
   })
 
 
   document.querySelector('.cancel').addEventListener('click', function(e) {
     signInPage.style.display = 'none'
+    document.body.style.overflowY = "auto";
   })
 
 
