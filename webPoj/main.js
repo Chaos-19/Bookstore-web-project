@@ -56,11 +56,31 @@
   const signInPage = document.querySelector('.account');
   document.querySelector('.sign').addEventListener('click', (e) => {
 
-    signInPage.style.display = "block"
+    signInPage.style.display = "flex"
 
   })
 
 
   document.querySelector('.cancel').addEventListener('click', function(e) {
     signInPage.style.display = 'none'
+  })
+
+
+const productContainers = [...document.querySelectorAll('.books-card')];
+
+  const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+
+  const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+  productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+      item.scrollLeft += containerWidth-70;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+      item.scrollLeft -= containerWidth+65;
+    })
   })

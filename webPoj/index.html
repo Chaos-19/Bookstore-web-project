@@ -49,26 +49,65 @@
 
         <div class="account">
           <button class="cancel">✖</button>
-          <div class="form-container">
 
-            <span class="sign in">SignIn</span><span class="sign up">SignUp</span>
-            <hr id="indicator" />
-            
-            <form class="signIn" action="" method="post" id="signIn">
-              <label>
-                Email
-                <input type="email" name="email" id="email" value="" placeholder="Email" />
-              </label>
-              <label>
-                Password
-                <input type="password" name="password" id="password" placeholder="Password">
-              </label>
-              <input type="button" value="SignIn">
-              <p><a href="#">forget password</a></p>
-            </form>
+          <div class="account-container">
+            <div class="overlay">
+              <img src="/istockphoto-1219786897-612x612.jpg" alt="">
+              <p class="quote">Bookshops are places of endless entertainment and renewal – what's not to love?</p>
+            </div>
+            <div class="form login">
+              <form action="" method="post">
+                <div class="header">Login</div>
+                <div class="form-container">
+                  <div class="input">
+                    <img src="./email_48.png" alt="">
+                    <input type="email" name="email" id="" placeholder="Email">
+                  </div>
+                  <div class="input">
+                    <img src="./lock_48.png" alt="">
+                    <input type="password" name="password" id="" placeholder="Password">
+                  </div>
+                  <p class="text">
+                    <a href="#">forget password</a>
+                  </p>
+                  <input type="button" name="submit" id="submit" value="Login" />
+                </div>
+
+              </form>
+              <p class="switch"><a href="#">doesn't have an account ?</a></p>
+            </div>
+
+            <div class="form signup">
+              <form action="" method="post">
+                <div class="header">Login</div>
+                <div class="form-container">
+                  <div class="input">
+                    <img src="./email_48.png" alt="">
+                    <input type="text" name="username" id="" placeholder="Name">
+                  </div>
+                  <div class="input">
+                    <img src="./email_48.png" alt="">
+                    <input type="email" name="email" id="" placeholder="Email">
+                  </div>
+                  <div class="input">
+                    <img src="./lock_48.png" alt="">
+                    <input type="password" name="Password" id="" placeholder="password">
+                  </div>
+                  <input type="button" name="submit" id="submit" value="signup" />
+                </div>
+                <p class="switch">
+                  <a href="#">Already have an Account</a>
+                </p>
+              </form>
+            </div>
           </div>
+
+
         </div>
+
+
       </div>
+
       <div class="header-content">
         <div class="col-1">
           <h1>
@@ -91,14 +130,18 @@
   <!-- Main -->
   <section class="main">
     <div class="heading"><span>featured books</span></div>
+    <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
     <div class="books-card">
     </div>
   </section>
 
   <!-- Best Sell -->
-  <section class="best-sell">
+  <section class="main best-sell">
     <div class="heading"><span>Best Selling</span></div>
-    <div class="books-best">
+    <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+    <div class="books-card books-best">
     </div>
   </section>
 
