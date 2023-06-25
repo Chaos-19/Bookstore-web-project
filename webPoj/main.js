@@ -1,8 +1,7 @@
   const open = document.querySelector('.drawer');
   console.log(open);
-  open.addEventListener('toggle', (e) => {
-    document.querySelector('.nav-link').style.opacity = '1';
-
+  open.addEventListener('click', (e) => {
+  document.querySelector('.nav-link').classList.toggle('open');
   })
   const container = document.querySelector('.books-card');
 
@@ -17,7 +16,7 @@
           <p class="section">Featured Book</p>
           <p class="title">Book Title</p>
           <p class="author">Author Name</p>
-          <p class="price">$57.99 <sub class="origi">$70.65</sub></p>
+          <p class="price">$57.99 <sub class="origi">$${70.65}</sub></p>
           <a href="#" class="add-to-cart">Add to Cart</a>
         </div>
   `;
