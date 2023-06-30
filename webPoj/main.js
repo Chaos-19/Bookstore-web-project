@@ -1,8 +1,21 @@
   const open = document.querySelector('.drawer');
   console.log(open);
   open.addEventListener('click', (e) => {
-  document.querySelector('.nav-link').classList.toggle('open');
+    document.querySelector('.nav-link').classList.add('open');
+    document.body.style.overflow = 'hidden';
   })
+
+  const link = document.querySelectorAll('.nav-link ul li');
+
+  for (let i = 0; i < link.length; i++) {
+
+    link[`${i}`].addEventListener('click', function(e) {
+      document.querySelector('.nav-link').classList.remove('open');
+      document.body.style.overflow = 'auto';
+    })
+
+  }
+
   const container = document.querySelector('.books-card');
 
   for (let i = 0; i < 15; i++) {
@@ -66,7 +79,7 @@
   })
 
 
-const productContainers = [...document.querySelectorAll('.books-card')];
+  const productContainers = [...document.querySelectorAll('.books-card')];
 
   const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
 
@@ -77,10 +90,19 @@ const productContainers = [...document.querySelectorAll('.books-card')];
     let containerWidth = containerDimensions.width;
 
     nxtBtn[i].addEventListener('click', () => {
-      item.scrollLeft += containerWidth-70;
+      item.scrollLeft += containerWidth - 70;
     })
 
     preBtn[i].addEventListener('click', () => {
-      item.scrollLeft -= containerWidth+65;
+      item.scrollLeft -= containerWidth + 65;
     })
   })
+
+
+  const car = [...document.getElementsByClassName('card')];
+  
+  car.forEach(v =>
+    v.addEventListener('click', () => {
+
+      
+    }));

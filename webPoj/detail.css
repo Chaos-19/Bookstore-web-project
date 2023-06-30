@@ -207,6 +207,10 @@ footer {
 footer hr {
   margin: 20px 0 20px;
 }
+.copyright{
+  text-align: center;
+  padding: 1.5rem 0;
+}
 
 @media screen and (min-width :600px) {
 

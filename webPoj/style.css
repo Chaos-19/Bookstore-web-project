@@ -42,23 +42,25 @@ header {
 }
 
 .nav-link {
-  /*  display: none;*/
-  position: absolute;
-  top: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
   left: 0;
-  background: #747CD0;
+  backdrop-filter: blur(5px);
   width: 100%;
-  padding: 1.2rem 0;
-  opacity: 0;
+  height: 100%;
+  padding: 2rem ;
+  
 }
 .nav-link.open{
-  opacity: 1;
+  display: block;
 }
 
 
 .nav-link ul {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  
   gap: 20px;
   flex-flow: column nowrap;
 }
