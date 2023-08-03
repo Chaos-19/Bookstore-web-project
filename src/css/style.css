@@ -1,5 +1,5 @@
 body {
-  background: #fff url(./src/Image/bg-1.svg) 0 0 no-repeat;
+  background:#fff url(../Image/bg-1.svg) 0 0 no-repeat;
   background-position: right bottom;
   background-size: cover;
   background-size: 100%;
