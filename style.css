@@ -1,22 +1,33 @@
 body {
-  background: hsl(161, 93.5%, 30.4%) url(./Image/bg-1.svg) 0 0 no-repeat;
-  background-position: center 80%;
-  background-size: contain;
+  background: #fff url(./src/Image/bg-1.svg) 0 0 no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+  background-size: 100%;
   overflow-y: auto;
 }
+
 .form-group {
   margin: 1.2rem 0;
 }
+
 .col-12 {
   border-radius: 10px;
   border: 15px solid red;
   background: hsl(215, 25%, 26.7%);
 }
+
 .link {
   font-size: 18px;
   color: #fff;
 }
+
 input[type="submit"] {
   font-size: 23px;
   font-weight: bolder;
+}
+
+@media screen and (min-width: 550px) {
+  body{
+    font-size: 130%;
+  }
 }
