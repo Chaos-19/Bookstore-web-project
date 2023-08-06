@@ -3,21 +3,33 @@
 include 'config.php';
 
 $name = $_POST['name'];
-$email = $_POST['email'];
+$email = mysqli_real_escape_string($conn, $_POST['email']);
 
 // Perform any necessary processing with the form data
 
 if ($email) {
   $result = mysqli_query($conn, "SELECT * FROM User WHERE Email='{$email}'");
   if (mysqli_num_rows($result) > 0) {
-    $row = mysqli_fetch_assoc($result);
-    /*  echo "name = ".$row['Name']."\n email =".$row['Email']." \npassword = ".$row['Password']." \ntype = ".$row['Role']; */
-    echo json_encode($row);
+    http_response_code(200);
+    header('Content-Type: application/json; charset=utf-8');
+    $responseData = [
+      'status' => 'success',
+      'user' => true,
+      'message' => 'Request processed successfully',
+      'data' => json_encode(mysqli_fetch_assoc($result)),
+    ];
+
+    echo json_encode($responseData);
   } else {
-    echo "User doesn't exist! ";
+    $responseData = [
+      'status' => 'success',
+      'user' => false,
+      'message' => 'Request processed successfully',
+      'data' => "User doesn't exist",
+    ];
+    echo json_encode($responseData);
   }
 }
-
 
 // Return a response
 

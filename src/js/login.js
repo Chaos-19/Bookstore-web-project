@@ -1,40 +1,66 @@
-import { makeRequest, grapFormData, validateForm } from "./commonFunction.js";
+import {
+  makeRequest,
+  grapFormData,
+  displayError
+} from "./commonFunction.js";
 
 
 const formElement = document.getElementById('login');
-
+const smallScreenError = document.querySelector('.alert-xs');
+const middleScrean = document.querySelector('.alert-sm');
 
 formElement.addEventListener('submit', function(e) {
-  let formValues = new FormData(formElement);
   e.preventDefault();
+  let formValues = new FormData(formElement);
 
+  if (formElement.checkValidity()) {
+    let query = grapFormData(formValues).join("&");
+    const url = "./src/php/login.php";
 
-
-  if (validateForm(formValues)) {
-    var query = grapFormData(formValues).join("&");
-
-    const url = ".../storage/emulated/0/htdocs/Test/process_form.php";
-
-    makeRequest(url, query);
-
+    main(url, query);
   }
-})
-
-const input = document.querySelectorAll('input');
-
-input.forEach((v, i) => {
-
-  v.addEventListener('invalid', function(event) {
-    if (event.target.validity.valueMissing) {
-      event.target.setCustomValidity('Please tell us how we should address you.');
-      event.target.classList.toggle('is-invalid');
-    }
-  })
-
-  v.addEventListener('change', function(event) {
-    event.target.setCustomValidity('');
-    event.target.classList.remove('is-invalid');
-  })
-
-
 });
+
+
+
+async function main(url, query) {
+  // Make the request and get the result
+  try {
+    const result = await makeRequest(url,
+      query,
+      "POST");
+
+    if (result) {
+      if (result.user) {
+        let data = JSON.parse(result.data);
+        if (result.verified) {
+          var userInfo = data;
+          displayError('successfully Login welcome', true)
+        } else {
+          displayError(data.message, true);
+        }
+      } else {
+        displayError(result.data, true);
+      }
+    } else {
+      displayError("There was an error with the Network", ttrue);
+    }
+  }catch(e) {
+    console.log(e);
+  }
+}
+
+
+if (formElement.checkValidity()) {}
+document.querySelectorAll('input').forEach((v, i) => {
+  v.addEventListener('invalid', function(e) {
+    if (!e.target.checkValidity()) {
+      e.target.classList.add('is-invalid');
+    }})
+  v.addEventListener("input",
+    function(e) {
+      if (e.target.checkValidity()) {
+        e.target.classList.remove('is-invalid');
+      }
+    })
+})

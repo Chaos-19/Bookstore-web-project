@@ -1,74 +1,72 @@
-import { makeRequest, grapFormData, validateForm } from './commonFunction.js';
+import {
+  makeRequest,
+  grapFormData,
+  displayError
+} from './commonFunction.js';
 
 const formElement = document.getElementById('signin');
+const smallScreenError = document.querySelector('.alert-xs');
+const middleScrean = document.querySelector('.alert-sm');
 
 
-
-formElement.addEventListener('click', function(e) {
+formElement.addEventListener('submit', function(e) {
+  e.preventDefault();
 
   let formData = new FormData(formElement);
 
-  if (validateForm(formData)) {
-    let query = grapFormData(formData);
+  if (formElement.checkValidity()) {
+    let query2 = grapFormData(formData).join('&');
+    console.log(query2);
+    displayError("password are not the same", !isValueEqule(formElement, 'password', 'cpassword'));
 
-    const url = "./src/php/signin.php";
-
-    if (!isValueEqule(formElement, 'password', 'cpassword')) {
-      e.preventDefault();
-      const error = "password are not the same ";
-
-      const smallScreenError = document.querySelector('.alert-xs');
-      const middleScrean = document.querySelector('.alert-sm');
-
-      if (window.innerWidth < 880) {
-        
-        smallScreenError.classList.remove('d-none');
-        smallScreenError.textContent = error;
-
-      } else {
-      
-        middleScrean.classList.remove('d-none');
-        middleScrean.textContent = error;
-      }
-
-      console.log("value not equal");
-    } else {
-      e.preventDefault();
-      document.querySelector('.overlay').classList.remove('d-none');
-
+    if (isValueEqule(formElement, 'password', 'cpassword')) {
+      const url2 = "./src/php/process_form.php";
+      checkUser(formElement['email'].value, url2, query2)
     }
   }
 })
 
-const isValueEqule = (form, value1, value2) => form[value1].value === form[value2].value || form[value1].length < form[value1].minLength;
+const isValueEqule = (form,
+  value1,
+  value2) => form[value1].value === form[value2].value || form[value1].length < form[value1].minLength;
 
-
-const input = document.querySelectorAll('input');
-
-input.forEach((v, i) => {
-
-  v.addEventListener('invalid', function(event) {
-    if (event.target.validity.valueMissing || event.target.value.length < event.target.minLength) {
-      event.target.classList.add('is-invalid');
-    }
+if (!formElement.checkValidity()) {
+  document.querySelectorAll('input').forEach((v, i) => {
+    v.addEventListener('invalid', function(e) {
+      if (!e.target.checkValidity()) {
+        e.target.classList.add('is-invalid');
+      }})
+    v.addEventListener("input",
+      function(e) {
+        if (e.target.checkValidity()) {
+          e.target.classList.remove('is-invalid');
+        }
+      })
   })
+}
 
-  v.addEventListener('input', function(event) {
-    if (event.target.value.length > v.minLength && event.target.type !== "email") {
-      event.target.setCustomValidity('');
-      event.target.classList.remove('is-invalid');
-    }
-    else if (event.target.type == "email") {
-      if (/^[a-z]+([0-9]*|[a-z]*)*(@gmail.com|@yahoo.com)$/i.test(event.target.value)) {
-        event.target.setCustomValidity('');
-        event.target.classList.remove('is-invalid');
-      } else {
-        event.target.classList.toggle('is-invalid');
-        event.target.setCustomValidity('Please enter valid email address.');
-      }
-      console.log(/^[a-z]+(\d) +(@gmail.com|@yahoo.com)$/i.test(event.target.value));
-    }
-  })
+async function main(url, query) {
+  // Make the request and get the result
+  const result = await makeRequest(url,
+    query,
+    "POST");
+  if (result.registered) {
+    document.querySelector('.overlay').classList.remove('d-none');
+  } else {
+    displayError("There was an error with the request.", true)
+  }
+  return result;
+}
+async function checkUser(email, url, query) {
 
+  const result = await makeRequest(url, query, "POST");
 
-});
+  if (result.user) {
+    displayError(`${email} This email already exists`, true);
+    return;
+  } else {
+    const url2 = "./src/php/signin.php";
+    main(url2, query);
+  }
+
+}
