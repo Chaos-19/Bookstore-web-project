@@ -43,5 +43,5 @@ if (!empty($email) && !empty($password)) {
 } else {
   echo "empty fields ";
 }
-//mysqli_close($conn);
+mysqli_close($conn);
 ?>
