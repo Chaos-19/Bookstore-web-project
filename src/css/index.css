@@ -1,0 +1,18 @@
+:root {
+  scroll-behavior: smooth;
+}
+ /*nav item  */
+ li{
+  
+  
+ }
+ .bi{
+   font-size: 2rem;
+ }
+ .mobile-nav-toggle{
+   color: black;
+ }
+ li .bi h4{
+   top: -40%;
+   left: 60%;
+ }
