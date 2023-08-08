@@ -19,12 +19,12 @@ li .bi h4 {
 }
 
 /* carousel-caption */
-#home-carousel{
- 
+#home-carousel>.carousel-inner>.active>img {
+  aspect-ratio: 2/1;
 }
 
 .caption-content {
-  transform: translate(50%,-20%);
+  transform: translate(50%, -20%);
   line-height: 1.3;
 }
 
