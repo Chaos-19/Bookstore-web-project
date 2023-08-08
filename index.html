@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="container-fluid header bg-light">
+  <div class="container-fluid header">
     <div class="row py-3">
       <a href="" class="navbar-brand text-center">
         <img src="./src/Image/logo_332x.png" style="width: 200px" alt="Logo" class="">
@@ -28,7 +28,7 @@
         </form>
       </div>
     </div>
-    <div class="row mt-4 pe-0">
+    <div class="row shadow shadow-lg bg-body  mt-4 pe-0">
       <ul class="nav nav-pills nav-fill px-0">
         <li class="nav-item border">
           <a href="" class="nav-link">
@@ -67,28 +67,76 @@
     </div>
 
     <div class="row home-slider">
-      <div class="col">
+      <div class="col px-0 border">
 
         <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
 
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <div class="carousel-indicators text-success">
+            <button type="button" data-bs-target="#indicators" data-bs-slide-to="0" class="active bg-warning" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#indicators" data-bs-slide-to="1" aria-label="Slide 2" class="bg-danger"></button>
+              <button type="button" data-bs-target="#indicators" data-bs-slide-to="2" aria-label="Slide 3" class="bg-success"></button>
           </div>
-        
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/src/Image/slider-1_1920x.jpeg" alt="" class="d-block w-100">
-            <div class="carousel-caption text-dark d-none d-md-block">
-              <p>Back to school</p>
-              <h1>spacial 50%</h1>
-              <h1>Off</h1>
-              <p>For our student community</p>
-            </div>
-          </div>
-        </div>
 
+          <div class="carousel-inner border">
+
+            <div class="carousel-item active">
+              <img src="./src/Image/slider-1_1920x.jpeg" alt="" class="d-block w-100">
+              <div class="carousel-caption text-dark d-none d-md-block">
+                <div class="caption-content text-start">
+                  <div class="head">
+                    <span>Back to school</span>
+                  </div>
+                  <div class="sub-head">
+                    <span> spacial<span class="persent">
+                        50% Off</span>
+                    </span>
+                  </div>
+                  <div class="text">For our student community</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item px-0">
+              <img src="./src/Image/wonder.jpg" alt="" class="d-block w-100">
+              <div class="carousel-caption text-dark d-none d-md-block">
+                <div class="caption-content text-start">
+                  <div class="head">
+                    <span>Back to school</span>
+                  </div>
+                  <div class="sub-head">
+                    <span> spacial<span class="persent">
+                        50%<br>Off</span>
+                    </span>
+                  </div>
+                  <div class="text">For our student community</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="row second-slider">
+      
+      <div class="col col-md-8">
+        
+        <div class="carousel slide">
+          
+          <div class="carousel inner">
+            .carousel-item
+          </div>
         </div>
       </div>
     </div>
