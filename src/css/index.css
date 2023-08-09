@@ -3,7 +3,8 @@
 }
 
 /*nav item  */
-li {}
+li {
+}
 
 .bi {
   font-size: 2rem;
@@ -19,8 +20,7 @@ li .bi h4 {
 }
 
 /* carousel-caption */
-#home-carousel>.carousel-inner>.active>img {
-  aspect-ratio: 2/1;
+#home-carousel > .carousel-inner > .active > img {
 }
 
 .caption-content {
@@ -49,24 +49,24 @@ li .bi h4 {
 }
 
 .owl-carousel .item-carousel {
-  color: #1B8BCC;
+  color: #1b8bcc;
 }
 
-.borde{
-  border: 1px solid #FB2F56;
+/* .borde{
+  border: 0.5px solid #8F8C8C;
   border-top: none;
   border-bottom: none;
 }
-
+ */
 .item-icon .bi {
   font-size: 3rem;
 }
 
-.item-content>h4 {
+.item-content > h4 {
   font-size: 18px;
 }
 
-.item-content>span {
+.item-content > span {
   font-size: 12px;
 }
 
