@@ -43,15 +43,19 @@ li .bi h4 {
   color: rgba(56, 83, 255, 1);
 }
 
+/* owl-carousel */
+.owl-carousel {
+  border: 2px solid white;
+}
+
 .owl-carousel .item-carousel {
   color: #1B8BCC;
 }
 
 .item-carousel {
-  border: .5px solid #ACACAC;
-  border-top: 0;
-  border-bottom: 0;
-  width: 100%;
+  border: 1px solid red;
+  border-top: none;
+  border-bottom: none;
 }
 
 .item-icon .bi {
