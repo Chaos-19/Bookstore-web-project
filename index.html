@@ -132,12 +132,63 @@
 
     <div class="row second-slider">
 
-      <div class="col">
+      <div class="col border">
+        <div class="owl-carousel">
 
-        
+          <div class="item-carousel p-4 border border-top-0 border-bottom-0">
+            <div class="d-flex align-items-center">
+              <div class="flex-shrik-0 me-4 item-icon">
+                <i class="bi bi-truck"></i>
+              </div>
+              <div class="item-content flex-grow-1">
+                <h4 class="text-capitalize">quick delivery</h4>
+                <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-carousel p-4 border border-top-0 border-bottom-0">
+            <div class="d-flex align-items-center">
+              <div class="flex-shrik-0 me-4 item-icon">
+                <i class="bi bi-tags"></i>
+              </div>
+              <div class="item-content flex-grow-1">
+                <h4 class="text-capitalize">quick delivery</h4>
+                <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-carousel p-4 border border-top-0 border-bottom-0">
+            <div class="d-flex align-items-center">
+              <div class="flex-shrik-0 me-4 item-icon">
+                <i class="bi bi-credit-card"></i>
+              </div>
+              <div class="item-content flex-grow-1">
+                <h4 class="text-capitalize">quick delivery</h4>
+                <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item-carousel p-4 border border-top-0 border-bottom-0">
+            <div class="d-flex align-items-center">
+              <div class="flex-shrik-0 me-4 item-icon">
+                <i class="bi bi-shield-fill-check"></i>
+              </div>
+              <div class="item-content flex-grow-1">
+                <h4 class="text-capitalize">quick delivery</h4>
+                <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- section -->
@@ -146,6 +197,28 @@
   <script src="./src/bootstrap/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="cdn_modules/jquery@3.7.0/jquery.min.js"></script>
   <script type="text/javascript" src="cdn_modules/OwlCarousel2@2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".owl-carousel").owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 0,
+        dots: false, // Disable indicators 
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+
+          },
+          1024: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
