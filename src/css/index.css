@@ -52,8 +52,8 @@ li .bi h4 {
   color: #1B8BCC;
 }
 
-.item-carousel {
-  border: 1px solid red;
+.borde{
+  border: 1px solid #FB2F56;
   border-top: none;
   border-bottom: none;
 }
