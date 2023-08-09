@@ -42,3 +42,33 @@ li .bi h4 {
 .caption-content .sub-head .persent {
   color: rgba(56, 83, 255, 1);
 }
+
+.owl-carousel .item-carousel {
+  color: #1B8BCC;
+}
+
+.item-carousel {
+  border: .5px solid #ACACAC;
+  border-top: 0;
+  border-bottom: 0;
+  width: 100%;
+}
+
+.item-icon .bi {
+  font-size: 3rem;
+}
+
+.item-content>h4 {
+  font-size: 18px;
+}
+
+.item-content>span {
+  font-size: 12px;
+}
+
+.icon-flipped {
+  transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+}
