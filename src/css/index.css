@@ -19,8 +19,11 @@ li .bi h4,
   left: 60%;
 }
 
+[type="search"] {
+  
+}
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1150px) {
   .top-nav {
     display: none;
   }
