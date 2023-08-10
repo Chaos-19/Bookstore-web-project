@@ -20,7 +20,7 @@ li .bi h4,
 }
 
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1200px) {
   .top-nav {
     display: none;
   }
