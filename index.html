@@ -8,7 +8,8 @@
   <meta name="author" content="chaos">
   <title></title>
   <!-- Bootstrap core CSS -->
-  <link href="./src/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!--   <link href="./src/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="cdn_modules/bootstrap@5.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="./src/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <!-- owl-carousel -->
   <link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.carousel.css" rel="stylesheet">
@@ -17,104 +18,77 @@
 </head>
 
 <body>
-  <div class="container-fluid p-0 header">
-    <div class="row d-xl-flex p-0 m-0 justify-content-between align-items-center">
-      
-      <div class="col-12 col-xl-3 d-flex justify-content-center py-3">
-        <a href="" class="text-center">
-          <img src="./src/Image/logo_332x.png" style="width: 200px" alt="Logo" class="d-block">
-        </a>
-      </div>
-      
-      <div class="col-lg-6  d-flex justify-content-center">
-        <div class="col-11 col-md-8 col-xl-6 m-0 p-0">
-          <input type="search" name="search" id="" class="form-control form-control-lg py-2 rounded-pill" placeholder="Search">
+
+  <header>
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light" aria-label="Fourth navbar example">
+      <div class="container-fluid px-0 m-0">
+
+        <div class="row gap-4 w-100 m-0 p-0 justify-content-center justify-content-lg-between align-items-center">
+
+          <div class="col-12 col-lg-auto d-flex justify-content-center">
+            <a class="navbar-brand" href="#">
+              <img src="./src/Image/logo_332x.png" style="width: 200px" alt="Logo" class="">
+            </a>
+          </div>
+
+          <div class="col-12 px-5 px-md-0 d-block col-md-5 pt-3 justify-content-center">
+            <form role="search">
+              <input class="form-control form-control-lg" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+
+          <div class="col-12 col-lg-auto top-nav">
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item pt-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="true" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="#">
+                  <i class="bi bi-cart position-relative bagg">
+                    <h3 class="position-absolute badge-top"><span class="badge rounded-pill bg-warning">0</span></h3>
+                  </i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-person"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <i class="bi bi-heart position-relative">
+                    <h3 class="position-absolute badge-top"><span class="badge rounded-pill bg-warning">0</span></h3>
+                  </i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-truck position-relative">  
+                  <h3 class="position-absolute badge-top"><span class="badge rounded-pill bg-warning">0</span></h3>
+                  </i>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="#">
+                  <i class="bi bi-cart position-relative">
+                    <h3 class="position-absolute badge-top"><span class="badge rounded-pill bg-warning">0</span></h3>
+                  </i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+    </nav>
+
+  </header>
 
 
-      <div class="top-nav col-12 col-xl-3 p-0 m-0 shadow-lg bg-body mt-4">
-        <ul class="nav nav-pills nav-fill px-0" style="display: flex">
-          <li class="nav-item border d-xl-none">
-            <a href="" class="nav-link">
-              <i class="bi position-relative bi-list mobile-nav-toggle"></i>
-            </a>
-          </li>
-          <li class="nav-item border"><a href="" class="nav-link">
-              <i class="bi position-relative bi-person"></i>
-            </a>
-          </li>
-          <li class="nav-item border"><a href="" class="nav-link">
-              <i class="bi position-relative bi-person">
-                <h4 class="position-absolute"> <span class="badge rounded-pill bg-warning">0</span></h4>
-              </i>
-            </a>
-          </li>
-          <li class="nav-item border"><a href="" class="nav-link">
-              <i class="bi position-relative bi-heart">
-                <h4 class="position-absolute"> <span class="badge rounded-pill bg-warning">0</span></h4>
-              </i>
-            </a>
-          </li>
-          <li class="nav-item border"><a href="" class="nav-link">
-              <i class="bi position-relative bi-truck">
-                <h4 class="position-absolute"> <span class="badge rounded-pill bg-warning">0</span></h4>
-              </i>
-            </a>
-          </li>
-          <li class="nav-item border"><a href="" class="nav-link">
-              <i class="bi position-relative bi-cart">
-                <h4 class="position-absolute"> <span class="badge rounded-pill bg-warning">0</span></h4>
-              </i>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="top-nav border border-warning col-xl-3 d-none d-xl-block gx-2">
-
-        <a href="" class="nav-item">
-          <i class="bi bi-cart position-relative">
-            <h3 class="position-absolute bag">
-              <span class="bedge rounded-pill bg-warning">0</span>
-            </h3>
-          </i>
-        </a>
-
-        <a href="" class="nav-item">
-          <i class="bi bi-truck position-relative">
-            <h3 class="position-absolute bag">
-              <span class="bedge rounded-pill bg-warning">0</span>
-            </h3>
-          </i>
-        </a>
-        <a href="" class="nav-item">
-          <i class="bi bi-heart-fill position-relative">
-            <h3 class="position-absolute bag">
-              <span class="bedge rounded-pill bg-warning">0</span>
-            </h3>
-          </i>
-        </a>
-        <a href="" class="nav-item">
-          <i class="bi position-relative  bi-person">
-            <h3 class="position-absolute bag">
-              <span class="bedge rounded-pill bg-warning">0</span>
-            </h3>
-          </i>
-        </a>
-
-        <a href="" class="nav-item">
-          <i class="bi bi-flag">
-          </i>
-        </a>
-
-      </div>
 
 
-    </div>
-  </div>
-  </div>
-
+  
   <div class="container-fluid">
     <div class="row home-slider">
       <div class="col px-0 border">
@@ -248,6 +222,7 @@
       </div>
     </div>
   </div>
+
 
 
   <script src="./src/bootstrap/bootstrap.bundle.min.js"></script>
