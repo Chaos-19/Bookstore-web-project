@@ -28,10 +28,11 @@ li .bi h4,
 
 
 /* carousel-caption */
+
 #home-carousel>.carousel-inner>.active>img {}
 
-.caption-content {
-  transform: translate(50%, -20%);
+.carousel-caption {
+  transform: translate(25%, 0%);
   line-height: 1.3;
 }
 
