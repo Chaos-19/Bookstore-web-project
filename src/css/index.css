@@ -31,8 +31,8 @@ li .bi h4,
 
 #home-carousel>.carousel-inner>.active>img {}
 
-.carousel-caption {
-  transform: translate(25%, 0%);
+.carousel-caption{
+  transform: translate(45%, 0%);
   line-height: 1.3;
 }
 
