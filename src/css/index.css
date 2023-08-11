@@ -4,11 +4,6 @@
 
 /*nav item  */
 .top-nav .bi {
-  font-size: 2.5rem;
-  color: red;
-}
-
-.bi {
   font-size: 2rem;
 }
 
@@ -22,6 +17,12 @@ li .bi h4,
   top: -40%;
   left: 70%;
   color: red;
+}
+
+@media screen and (max-width:1200px) {
+  .top-nav li{
+    border: none;
+  }
 }
 
 
@@ -81,10 +82,4 @@ li .bi h4,
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
-}
-
-.nav {
-  display: flex;
-  flex-flow: row wrap;
-
 }
