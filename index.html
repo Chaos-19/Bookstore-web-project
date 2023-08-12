@@ -13,6 +13,8 @@
   <link href="./src/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <!-- owl-carousel -->
   <link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.carousel.css" rel="stylesheet">
+  <link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+
   <!-- custom css -->
   <link rel="stylesheet" href="./src/css/index.css">
 </head>
@@ -109,8 +111,8 @@
           </div>
         </div>
       </div>
-      
-         <div class="carousel-item">
+
+      <div class="carousel-item">
         <img src="./src/Image/slider-1_1920x.jpeg" alt="" class="d-block w-100">
         <div class="container">
           <div class="carousel-caption text-dark">
@@ -127,7 +129,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -144,7 +146,7 @@
   <div class="container-fluid shadow-lg">
     <div class="row justify-content-center second-slider">
       <div class="col col-md-11">
-        <div class="owl-carousel px-0">
+        <div class="owl-carousel features px-0">
 
           <div class="item-carousel p-4 border border-top-0 border-bottom-0">
             <div class="d-flex align-items-center">
@@ -199,43 +201,136 @@
       </div>
     </div>
   </div>
-
+  <div class="separator p-2"></div>
   <!-- section -->
   <div class="container best-sell">
     <div class="row">
       <div class="col">
-
+        <div class="slider">
+          <div class="owl-carousel row">
+            <div class="card">
+              <img src="./src/Image/1_380x.jpeg" alt="" class="card-img-top">
+              <div class="card-body pb-5">
+                <p class="card-text m-0  category">
+                  <small>Modern</small>
+                </p>
+                <h4 class="card-title my-2 text-capitalize title">Discover the art</h4>
+                <h5 class="card-text m-0 mb-2">
+                  <small>chaos</small>
+                </h5>
+                <a href="" class="btn btn-lg btn-outline-primary price">$400</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+      <div class="separator p-5"></div>
+
+      <div class="slider">
+        <div class="owl-carousel row best-sell">
+          <div class="card">
+            <img src="./src/Image/1_380x.jpeg" alt="" class="card-img-top">
+            <div class="card-body pb-5">
+              <p class="card-text m-0  category">
+                <small>Modern</small>
+              </p>
+              <h4 class="card-title my-2 text-capitalize title">Discover the art</h4>
+              <h5 class="card-text m-0 mb-2">
+                <small>chaos</small>
+              </h5>
+              <a href="" class="btn btn-lg btn-outline-primary price">$400</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./src/Image/1_380x.jpeg" alt="" class="card-img-top">
+            <div class="card-body pb-5">
+              <p class="card-text m-0  category">
+                <small>Modern</small>
+              </p>
+              <h4 class="card-title my-2 text-capitalize title">Discover the art</h4>
+              <h5 class="card-text m-0 mb-2">
+                <small>chaos</small>
+              </h5>
+              <a href="" class="btn btn-lg btn-outline-primary price">$400</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./src/Image/1_380x.jpeg" alt="" class="card-img-top">
+            <div class="card-body pb-5">
+              <p class="card-text m-0  category">
+                <small>Modern</small>
+              </p>
+              <h4 class="card-title my-2 text-capitalize title">Discover the art</h4>
+              <h5 class="card-text m-0 mb-2">
+                <small>chaos</small>
+              </h5>
+              <a href="" class="btn btn-lg btn-outline-primary price">$400</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
+      <script src="./src/bootstrap/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="cdn_modules/jquery@3.7.0/jquery.min.js"></script>
+      <script type="text/javascript" src="cdn_modules/OwlCarousel2@2.3.4/owl.carousel.js"></script>
 
-  <script src="./src/bootstrap/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="cdn_modules/jquery@3.7.0/jquery.min.js"></script>
-  <script type="text/javascript" src="cdn_modules/OwlCarousel2@2.3.4/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $(".owl-carousel").owlCarousel({
-        items: 4,
-        loop: true,
-        margin: 0,
-        dots: false, // Disable indicators 
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 2
+      <script>
+        $(document).ready(function() {
 
-          },
-          1024: {
-            items: 3
-          }
-        }
-      });
-    });
-  </script>
+          $(".features").owlCarousel({
+
+            items: 4,
+            autoplay: true,
+            autoPlaySpeed: 500,
+            autoPlayTimeout: 5000,
+            autoPlayHoverPause: true,
+            margin: 10,
+            loop: true,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 4
+              }
+            }
+          });
+
+        });
+
+        // Owlcarousel
+        $(document).ready(function() {
+          $(".best-sell").owlCarousel({
+            nav: false,
+            loop: true,
+            margin: 30,
+            rlt:true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2200,
+            autoplayTimeout: 2200,
+            autoplayHoverPause: true,
+            slideTransition: 'linear',
+            responsive: {
+              0: {
+                items: 2
+              },
+              600: {
+                items: 3
+              },
+              1000: {
+                items: 5
+              }
+            }
+          });
+        });
+      </script>
 </body>
 
 </html>
