@@ -96,4 +96,19 @@ li .bi h4,
   border-radius: 3px;
   text-align: center;
 }
+
+.owl-carousel .item {
+  height: 10rem;
+  background: #4DC7A0;
+  padding: 1rem;
+}
+
+.owl-prev.disable {
+  display: none !important;
+}
+
+.owl-next.disable {
+  display: none !important;
+}
+
  
