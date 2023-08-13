@@ -18,7 +18,7 @@
           items: 2
         },
         1000: {
-          items: 4
+          items: 3
         }
       }
     });
@@ -111,12 +111,21 @@
     });
 
   });
+  
+  const image = [
+      './src/Image/book2.jpeg',
+      './src/Image/1_380x.jpeg',
+      './src/Image/pro_pbid_4217056_380x.jpeg',
+      './src/Image/banner-bg.jpg',
+      './src/Image/wonder.jpg'
+    ]
+  
   const container = document.querySelector('#bestseller');
   const topRated = document.querySelector('#top-rated');
   for (var i = 0; i < 12; i++) {
     const chaild = `
            <div class="card shadow my-4">
-              <img src="./src/Image/1_380x.jpeg" alt="" class="card-img-top">
+              <img src="${image[Math.round((Math.random()*5))]}" alt="" class="card-img-top">
               <div class="card-body pb-5">
                 <p class="card-text m-0  category">
                   <small>${i} item</small>
@@ -133,7 +142,7 @@
 
     const chaildT = `
            <div class="card shadow my-4">
-              <img src="./src/Image/pro_pbid_4217056_380x.jpeg" alt="" class="card-img-top">
+              <img src="${image[Math.floor((Math.random()*5))]}" alt="" class="card-img-top">
               <div class="card-body pb-5">
                 <p class="card-text m-0  category">
                   <small>${i} item</small>
