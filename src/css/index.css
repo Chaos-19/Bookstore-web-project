@@ -110,9 +110,9 @@ li .bi h4,
 }
 
 
-/* myCarousel2 */
-#myCarousel2 .carousel-control-prev,
-#myCarousel2 .carousel-control-next {
+/* banner */
+#spacial-banner .carousel-control-prev,
+#spacial-banner .carousel-control-next {
   width: 10%;
 }
 
