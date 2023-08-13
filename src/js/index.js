@@ -83,8 +83,36 @@
     });
 
   });
+   $(document).ready(function() {
+
+    $("#limited-offer").owlCarousel({
+      items: 8,
+      nav: false,
+      loop: true,
+      margin: 10,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 6000,
+      autoplaySpeed: 8000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+
+    });
+
+  });
   const container = document.querySelector('#bestseller');
-  const topRated = document.querySelector('#top-rated')
+  const topRated = document.querySelector('#top-rated');
   for (var i = 0; i < 12; i++) {
     const chaild = `
            <div class="card shadow my-4">
@@ -121,4 +149,5 @@
 
     container.innerHTML += chaild;
     topRated.innerHTML += chaildT;
+    document.querySelector('#limited-offer').innerHTML += chaildT;
   }
