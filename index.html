@@ -14,6 +14,9 @@
   <link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.carousel.css" rel="stylesheet">
   <link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.theme.default.css" rel="stylesheet">
   <link href="cdn_modules/owl-carousel@1.3.3/owl.transitions.css" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="cdn_modules/Swiper@10.1.0/swiper-bundle.css">
+  <link rel="stylesheet" href="cdn_modules/Swiper@10.1.0/swiper-bundle.min.css">
   <!-- custom css -->
   <link rel="stylesheet" href="./src/css/index.css">
 </head>
@@ -88,9 +91,9 @@
 
   <div id="home-carousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -130,7 +133,7 @@
       </div>
 
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
@@ -218,51 +221,53 @@
     </div>
   </div>
 
-  <div class="separator p-2"></div>
+  <div class="separator my-2"></div>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col p-0">
-        <div class="carousel slide" data-bs-ride="carousel" id="myCarousel2">
+  <div id="spacial-banner" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators d-none">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
 
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/src/Image/banner-bg.jpg" class="w-100 d-block" alt="">
 
-              <img src="./src/Image/banner-bg.jpg" alt="" class="d-block  w-100">
-              <div class="carousel-caption p-0" style="width: 100%;max-width: 100%; left: 0;">
-                <div class="d-flex gap-3 px-5 align-items-">
-                 <img src="./src/Image/1_380x.jpeg" class="float-start" style="width: 20%; height: 25%" alt="">
-                  <div class="content text-start">
-                    <span class="text-uppercase book-title">big magic</span>
-                    <h5 class="text-uppercase author"><small class="text-capitalize">created by </small>down mark</h5>
-                    <span class="price">total $200</span>
-                  </div>
+        <div class="carousel-caption d-flex align-items-center">
+          <div class="row m-0 w-100">
+            <div class="col">
+              <div class="row align-items-md-center ps-3 p-md-5">
+                <div class="col-3 p-0 p-md-4 ms-md-5">
+                  <img src="./src/Image/1_380x.jpeg" class="d-block w-100" alt="">
+                </div>
+                <div class="col-5 text-start content">
+                  <span class="banner-title">Featured title</sapn>
+                    <span class="m-0 p-0 "><small>created by </small><span class="author text-uppercase">Chaos</span></span>
+                    <span class="text-capitalize total m-0 p-0">total <span class="text-warning price">$400</span></span>
+                    <p class="m-0"><a class="btn rounded-pill btn-primary" href="#">Browse gallery</a></p>
                 </div>
               </div>
             </div>
 
           </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-
         </div>
       </div>
+
     </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
   </div>
 
 
-
-  <div class="separator p-5"></div>
-
-
-
+  <div class="separator my-5"></div>
 
 
   <div class="separator p-5"></div>
@@ -272,6 +277,7 @@
   <script type="text/javascript" src="cdn_modules/bootstrap@5.3.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="cdn_modules/jquery@3.7.0/jquery.min.js"></script>
   <script type="text/javascript" src="cdn_modules/OwlCarousel2@2.3.4/owl.carousel.js"></script>
+
   <script src="./src/js/index.js"></script>
 </body>
 
