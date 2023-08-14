@@ -195,7 +195,8 @@ li .bi h4,
 #bx-pager a {
   position: relative;
   margin: 0 3px;
-  text-decoration: none
+  color: #272727;
+  text-decoration: none;
 }
 #bx-pager a .customer{
   position: relative;
