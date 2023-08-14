@@ -141,8 +141,7 @@
 
   });
 
-
-
+$('.bxslider').bxSlider({ pagerCustom: '#bx-pager' });
 
   const image = [
       './src/Image/book2.jpeg',
@@ -156,7 +155,7 @@
   for (var i = 0; i < 12; i++) {
     const chaild = `
            <div class="card shadow my-4">
-              <img src="${image[Math.round((Math.random()*4))]}" alt="" class="card-img-top">
+              <img src="${image[Math.round((Math.random()*3))]}" alt="" class="card-img-top">
               <div class="card-body pb-5">
                 <p class="card-text m-0  category">
                   <small>${i} item</small>
@@ -173,7 +172,7 @@
 
     const chaildT = `
            <div class="card shadow my-4">
-              <img src="${image[Math.floor((Math.random()*4))]}" alt="" class="card-img-top">
+              <img src="${image[Math.floor((Math.random()*3))]}" alt="" class="card-img-top">
               <div class="card-body pb-5">
                 <p class="card-text m-0  category">
                   <small>${i} item</small>

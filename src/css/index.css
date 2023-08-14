@@ -172,15 +172,36 @@ li .bi h4,
   transform: translateY(-50%);
 
 }
-.owl-carousel .owl-nav button{
+
+.owl-carousel .owl-nav button {
   display: none;
 }
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
-  
+
   font-size: 4.5rem;
   padding: 0;
   color: #000000;
   border-radius: 100%;
+}
+
+
+/* review */
+#bx-pager {
+  text-align: center;
+  margin-top: -30px;
+}
+
+#bx-pager a {
+  margin: 0 3px;
+}
+
+#bx-pager a img {
+  padding: 3px;
+  border: solid #ccc 1px
+}
+
+#bx-pager a.active h1 {
+  border: solid #5280DD 1px;
 }
