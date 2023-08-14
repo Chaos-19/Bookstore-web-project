@@ -197,11 +197,11 @@ li .bi h4,
   margin: 0 3px;
 }
 
-#bx-pager a img {
+#bx-pager a h1{
   padding: 3px;
   border: solid #ccc 1px
 }
 
-#bx-pager a.active h1 {
+#bx-pager a.active div{
   border: solid #5280DD 1px;
 }
