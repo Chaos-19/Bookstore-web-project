@@ -140,21 +140,22 @@ li .bi h4,
   display: inline-block;
   margin: 0;
 }
-#spacial-banner .content .book-title + span{
+
+#spacial-banner .content p+p {
   font-size: 18px;
-  margin: 0;
-  padding: 0;
   color: #000000
 }
+
 #spacial-banner .content .total {
   color: #686868;
   display: inline-block;
   margin-top: 5px;
   margin-bottom: 15px;
 }
-#spacial-banner .content .btn{
-  border: 2px solid red ;
-  display: inline-block;
+
+#spacial-banner .content .btn {
+  border: 2px solid red;
+  display: inline-bl;
 }
 
 @media screen and (min-width: 510px) {
