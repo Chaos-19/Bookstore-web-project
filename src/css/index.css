@@ -225,7 +225,9 @@ li .bi h4,
 }
 
 /* resource */
-
+#resource .row .col-12>div{
+  background: rgba(229, 229, 229, 1);
+}
 /* subscription */
 .subscription {
   position: absolute;
