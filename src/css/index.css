@@ -129,6 +129,34 @@ li .bi h4,
 
 }
 
+#spacial-banner .content {
+  border: 2px solid black;
+}
+
+#spacial-banner .content .book-title {
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #5F8C3B;
+  display: inline-block;
+  margin: 0;
+}
+#spacial-banner .content .book-title + span{
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: #000000
+}
+#spacial-banner .content .total {
+  color: #686868;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+#spacial-banner .content .btn{
+  border: 2px solid red ;
+  display: inline-block;
+}
+
 @media screen and (min-width: 510px) {
   #spacial-banner .content .banner-title {
     font-size: 3rem;
@@ -241,6 +269,7 @@ li .bi h4,
   align-items: center;
 
 }
+
 /* footer  */
 .footer-separetor {
   margin-bottom: 8rem;
@@ -250,7 +279,22 @@ footer .row {
   margin-top: 10rem;
 }
 
+#social-links .bi {
+  font-size: 23px;
+}
+
+#social-links ul>li>a {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+
 @media screen and (min-width:546px) {
+  footer {
+    font-size: 80%q;
+  }
+
   .footer-separetor {
     margin-top: 3rem;
   }
