@@ -182,9 +182,9 @@ li .bi h4,
 
 
 /* review */
-.bx-wrapper{
-    border: none;
-    box-shadow: none
+.bx-wrapper {
+  border: none;
+  box-shadow: none
 }
 
 #bx-pager {
@@ -198,27 +198,53 @@ li .bi h4,
   color: #272727;
   text-decoration: none;
 }
-#bx-pager a .customer{
+
+#bx-pager a .customer {
   position: relative;
 }
 
-#bx-pager a .customer::after{
-   position: absolute;
-   content: "";
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   right: 0;
-   width: 100%;
-   height: 100%;
-   z-index: 10;
-   background: rgba(253, 253, 253, 0.5);
-   opacity: 1;
+#bx-pager a .customer::after {
+  position: absolute;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(253, 253, 253, 0.5);
+  opacity: 1;
 }
 
-#bx-pager a.active .customer::after{
+#bx-pager a.active .customer::after {
   opacity: 0;
+}
+
+/* resource */
+
+/* subscription */
+.subscription {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  right: 0;
+}
+
+/* footer  */
+.footer-separetor {
+  margin-bottom: 5rem;
+}
+
+footer .row {
+  margin-top: 10rem;
+}
+
+@media screen and (min-width:546px) {
+  .footer-separetor {
+    margin-top: 8rem;
+  }
 }
