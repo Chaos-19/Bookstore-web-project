@@ -10,11 +10,13 @@
   <!-- Bootstrap core CSS -->
   <link href="cdn_modules/bootstrap@5.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="./src/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="./src/bxslider/jquery.bxslider.css">
   <!-- custom css -->
   <link rel="stylesheet" href="./src/css/index.css">
 </head>
 
-<body style="height: 100vh">
+<body>
 
   <header>
     <nav class="navbar navbar-expand-lg p-0 navbar-light bg-light" aria-label="Fourth navbar example">
@@ -80,56 +82,168 @@
       </div>
     </nav>
   </header>
-  
+
   <div class="container my-5">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
         <li class="breadcrumb-item">
           <a class="link-body-emphasis" href="index.html">
-            <i class="bi bi-house-door-fill"></i>
+            <i class="bi bi-house-fill"></i>
             <span class="visually-hidden">Home</span>
           </a>
         </li>
         <li class="breadcrumb-item">
-          <a class="link-body-emphasis fw-semibold text-decoration-none" href="contact.html">Contact</a>
+          <a class="link-body-emphasis fw-semibold text-decoration-none" href="about.html">About</a>
         </li>
       </ol>
     </nav>
   </div>
 
-  <div class="separator py-5"></div>
-  <main style="margin-bottom: 18rem ;">
-    <div class="col-md-10 mx-auto col-lg-5 bg-body-tertiary border rounded-3 ">
-      <div class="col text-center mt-5">
-        <h1 class="text-uppercase display-2 fw-light">we're happy to hear</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h1 class="display-1 text-uppercase">Nice to meet you</h1>
       </div>
-      <form class="p-4 pb-5 p-md-5 text-center">
-        <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="floatingInput" placeholder="Name" name="name">
-          <label for="floatingInput">Name</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
-          <label for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="floatingTitle" placeholder="Title" name="title">
-          <label for="floatingPassword">Title</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="floatingphonno" placeholder="phone number" name="phone">
-          <label for="floatingPassword">Phone number</label>
-        </div>
-        <div class="form-floating mb-3">
-          <textarea class="form-control" name="message" id="" cols="45" rows="10" id="floatingTextarea"></textarea>
-          <label for="floatingTextarea">message</label>
-        </div>
-        <button class="w-40 btn btn-lg btn-primary" type="submit">Sign up</button>
-
-      </form>
+      <div class="col">
+        <p class="fw-light fs-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        <p class="fs-5 fw-light">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+      </div>
     </div>
-  </main>
+    <div class="row my-5">
+      <div class="col-12 text-center">
+        <h2 class="display-2 text-uppercase">Our bord members</h2>
+      </div>
+      <div class="col-12 mt-5">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-md-6 text-center">
+            <div class="customer">
+              <img src="./src/Image/customer3.jpeg" alt="" class="rounded-circle img-thumbnail">
+              <div class="content mt-2">
+                <h4 class="text-capitalize">kalkidan getachew</h4>
+                <p class="fs-5 text-muted text-capitalize">chife executive officer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <div class="customer">
+              <img src="./src/Image/customer2.jpeg" alt="" class="rounded-circle img-thumbnail">
+              <div class="content mt-2">
+                <h4>Chaos kal</h4>
+                <p class="fs-5 text-muted">cheif Marketing officer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <div class="customer">
+              <img src="./src/Image/customer2.jpeg" alt="" class="rounded-circle img-thumbnail">
+              <div class="content mt-2">
+                <h4>Roger Edwards</h4>
+                <p class="fs-5 text-muted">chife design officer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <div class="customer">
+              <img src="./src/Image/customer3.jpeg" alt="" class="rounded-circle img-thumbnail">
+              <div class="content mt-2">
+                <h4>Roger Edwards</h4>
+                <p class="fs-5 text-muted">chife Technology officer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- review -->
+  <div class="container-fluid">
+    <div class="row gy-3 py-5 justify-content-center">
+      <div class="col-12 text-center">
+        <h1 class="fw-light display-5">OUR HAPPY CUSTOMERS</h1>
+      </div>
+      <div class="col-12 col-md-5">
+        <ul class="bxslider">
+          <li>
+            <p class="fst-italic text-center">erspiciatis unde omnis iste natus error sit voluptatem accpraesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.</p>
+          </li>
+          <li>
+            <p class="fst-italic text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+          </li>
+          <li>
+            <p class="fst-italic text-center">riure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praese</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div id="bx-pager">
+            <div class="row justify-content-center gap-2">
+              <a href="" data-slide-index="0" class="col-md-3">
+                <div class="customer">
+                  <img src="./src/Image/customer1.jpeg" alt="" class="rounded-circle img-thumbnail">
+                  <div class="content mt-2">
+                    <h4>Roger Edwards</h4>
+                    <p class="fs-5 text-muted">block lover</p>
+                  </div>
+                </div>
+              </a>
+              <a href="" data-slide-index="1" class="col-md-3">
+                <div class="customer">
+                  <img src="./src/Image/customer2.jpeg" alt="" class="rounded-circle img-thumbnail">
+                  <div class="content mt-2">
+                    <h4>Roger Edwards</h4>
+                    <p class="fs-5 text-muted">block lover</p>
+                  </div>
+                </div>
+              </a>
+              <a href="" data-slide-index="2" class="col-md-3">
+                <div class="customer">
+                  <img src="./src/Image/customer3.jpeg" alt="" class="rounded-circle img-thumbnail">
+                  <div class="content mt-2">
+                    <h4>Roger Edwards</h4>
+                    <p class="fs-5 text-muted">block lover</p>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="separator py-5"></div>
+  <!-- resources -->
+
+  <div class="container" id="resource">
+    <div class="row g-3 gy-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="text-center text-primary py-5">
+          <img src="./src/Image/icon-custom_180x.png" alt="">
+          <h1 class="display-2 mt-2">130,089</h1>
+          <p class="fs-5">Happy Customers</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="text-center text-primary py-5">
+          <img src="./src/Image/icon_book_180x.png" alt="">
+          <h1 class="display-2 mt-2">300,089k</h1>
+          <p class="fs-5">Book Collections</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="text-center text-primary py-5">
+          <img src="./src/Image/icon_map_180x.png" alt="">
+          <h1 class="display-2 mt-2">13,089</h1>
+          <p class="fs-5">Our Store Around the World</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="separator py-5 footer-separetor"></div>
   <!-- section footer -->
   <div class="container-fluid bg-primary bg-gardient">
     <div class="container position-relative">
@@ -150,6 +264,9 @@
             </form>
           </div>
         </div>
+
+
+
       </div>
 
       <footer class="py-5">
@@ -212,6 +329,14 @@
 
   <script type="text/javascript" src="cdn_modules/bootstrap@5.3.1/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="cdn_modules/bootstrap@5.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="cdn_modules/jquery@3.7.0/jquery.min.js"></script>
+  <script src="./src/bxslider/jquery.bxslider.js"></script>
+  <script>
+    $('.bxslider').bxSlider({
+      mode: 'fade',
+      pagerCustom: '#bx-pager'
+    });
+  </script>
 </body>
 
 </html>
