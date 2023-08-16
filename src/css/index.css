@@ -105,6 +105,15 @@ li .bi h4,
 
 
 /* banner */
+#spacial-banner .carousel-item img {
+  height: 100%;
+  box-shadow: 2px 3px 5px 5px rgba(240, 240, 240, 0.5);
+}
+
+#spacial-banner .carousel-item {
+  height: 40.5rem;
+}
+
 #spacial-banner .carousel-control-prev,
 #spacial-banner .carousel-control-next {
   width: 10%;
@@ -129,14 +138,13 @@ li .bi h4,
 
 }
 
-#spacial-banner .content {
-  border: 2px solid black;
-}
+#spacial-banner .content {}
 
 #spacial-banner .content .book-title {
-  font-size: 21px;
+  font-family: monospace;
+  font-size: 30px;
   text-transform: uppercase;
-  color: #5F8C3B;
+  color: #fff;
   display: inline-block;
   margin: 0;
 }
@@ -154,11 +162,16 @@ li .bi h4,
 }
 
 #spacial-banner .content .btn {
-  border: 2px solid red;
-  display: inline-bl;
+padding: 10px 40px;
 }
 
-@media screen and (min-width: 510px) {
+
+
+@media screen and (min-width: 576px) {
+  #spacial-banner .carousel-item {
+    height: auto;
+  }
+
   #spacial-banner .content .banner-title {
     font-size: 3rem;
   }
@@ -167,6 +180,7 @@ li .bi h4,
   #spacial-banner .content .total {
     font-size: 1.5rem;
   }
+
 
 }
 
