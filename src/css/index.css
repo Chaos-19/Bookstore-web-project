@@ -110,7 +110,8 @@ li .bi h4,
 /* banner */
 #spacial-banner .carousel-item img {
   height: 100%;
-  box-shadow: 2px 3px 5px 5px rgba(240, 240, 240, 0.5);
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 1));
+  /* box-shadow: 2px 3px 5px 5px rgba(240, 240, 240, 0.5); */
 }
 
 #spacial-banner .carousel-item {
