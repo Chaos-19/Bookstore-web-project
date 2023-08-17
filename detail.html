@@ -158,13 +158,29 @@
           <p id="bookdescription" class="lead fs-5">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
           </p>
-          <div class="cart-adder d-flex justify-content-start border border-2 border-warning">
-            <div id="cart-item-count" class="d-flex gap-2 m-0" style="flex: 2.8">
-              <button type="button" class="btn btn-outline-primary btn-lg rounded-circle"><i class="bi bi-dash"></i></button>
-              <input style="width: 25%" type="number" class="form-control rounded-pill text-center fs-1" name="noitem" value="0">
-              <button type="button" class="btn btn-outline-primary btn-lg rounded-circle"><i class="bi bi-plus-lg fw-semibold"></i></button>
+          <div class="cart-adder d-flex">
+            <div id="cart-item-count" class="d-flex gap-2 m-0" style="flex: 2">
+              <button type="button" id="minus" class="btn btn-outline-primary btn-lg rounded-circle"><i class="bi bi-dash"></i></button>
+              <input style="width: 30%;flex:0.8" type="number" class="form-control rounded-pill text-center fs-1" name="noitem" value="0">
+              <button type="button" id="plus" class="btn btn-outline-primary btn-lg rounded-circle"><i class="bi bi-plus-lg fw-semibold"></i></button>
             </div>
             <button type="button" class="btn btn-primary btn-lg fs-5 text-uppercase rounded-pill" style="flex: 1">add to cart</button>
+          </div>
+          <div class="d-grid my-4">
+            <button class="btn btn-primary text-uppercase btn-lg fs-4 rounded-pill">buy it now</button>
+          </div>
+          <hr>
+          <div class="">
+            <p class="d-flex gap-3">
+              <a href="#share" class="text-decoration-none fs-3" aria-expanded="false" data-bs-toggle="collapse" aria-controls="example"><i class="bi bi-share fs-3"></i> Share</a>
+              <a href="#shar" class="text-decoration-none fs-3" aria-expanded="false" data-bs-toggle="collapse" aria-controls="example"><i class="bi bi-heart fs-3"></i> Wishlist</a>
+            </p>
+
+            <div class="collapse" id="share">
+              <div class="card-body">
+                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-12 col-md-6"></div>
