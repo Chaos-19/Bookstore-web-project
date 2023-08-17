@@ -1,38 +1,38 @@
  // Owlcarousel
-  $(document).ready(function() {
+ $(document).ready(function() {
 
-    $("#related-product").owlCarousel({
-      items: 8,
-      nav: false,
-      margin: 10,
-      dots: false,
-      responsive: {
-        0: {
-          items: 2
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 5
-        }
-      }
+   $("#related-product").owlCarousel({
+     items: 8,
+     nav: false,
+     margin: 10,
+     dots: false,
+     responsive: {
+       0: {
+         items: 2
+       },
+       600: {
+         items: 3
+       },
+       1000: {
+         items: 5
+       }
+     }
 
-    });
+   });
 
-  });
+ });
 
-const image = [
+ const image = [
       './src/Image/book2.jpeg',
       './src/Image/1_380x.jpeg',
       './src/Image/pro_pbid_4217056_380x.jpeg',
       './src/Image/1_380x.jpeg'
     ]
 
-  const container = document.querySelector('#related-product');
-  
-  for (var i = 0; i < 12; i++) {
-    const chaild = `
+ const container = document.querySelector('#related-product');
+
+ for (var i = 0; i < 12; i++) {
+   const chaild = `
            <div class="card shadow my-4">
               <img src="${image[Math.round((Math.random()*3))]}" alt="" class="card-img-top">
               <div class="card-body pb-5">
@@ -47,22 +47,22 @@ const image = [
               </div>
             </div>
                         `;
-  
-    container.innerHTML += chaild;
-    }
-    	$(document).ready(function() {
-			$('#minus').click(function () {
-				var $input = $(this).parent().find('input');
-				var count = parseInt($input.val()) - 1;
-				count = count < 1 ? 1 : count;
-				$input.val(count);
-				$input.change();
-				return false;
-			});
-			$('#plus').click(function () {
-				var $input = $(this).parent().find('input');
-				$input.val(parseInt($input.val()) + 1);
-				$input.change();
-				return false;
-			});
-		});
+
+   container.innerHTML += chaild;
+ }
+ $(document).ready(function() {
+   $('#minus').click(function() {
+     var $input = $(this).parent().find('input');
+     var count = parseInt($input.val()) - 1;
+     count = count < 1 ? 1 : count;
+     $input.val(count);
+     $input.change();
+     return false;
+   });
+   $('#plus').click(function() {
+     var $input = $(this).parent().find('input');
+     $input.val(parseInt($input.val()) + 1);
+     $input.change();
+     return false;
+   });
+ });
