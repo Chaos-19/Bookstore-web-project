@@ -2,7 +2,12 @@
   scroll-behavior: smooth;
 }
 
+
 /*nav item  */
+.navbar {
+  margin-bottom: 20px;
+}
+
 .top-nav .bi {
   font-size: 2rem;
 }
@@ -43,10 +48,11 @@ li .bi h4,
     width: fit-content;
   }
 
- #home-carousel .carousel-caption .top + div {
+  #home-carousel .carousel-caption .top+div {
     font-size: 4rem;
-    
+
   }
+
   #home-carousel .caption-content .text {}
 
 }

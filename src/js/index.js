@@ -141,9 +141,10 @@
 
   });
 
-$('.bxslider').bxSlider({ 
-   mode:'fade',
-   pagerCustom: '#bx-pager' });
+  $('.bxslider').bxSlider({
+    mode: 'fade',
+    pagerCustom: '#bx-pager'
+  });
 
   const image = [
       './src/Image/book2.jpeg',
