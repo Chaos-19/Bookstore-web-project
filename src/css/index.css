@@ -38,6 +38,7 @@ li .bi h4,
 
 /* carousel-caption */
 
+
 #home-carousel .carousel-caption {
   width: 50%;
   position: absolute;
@@ -48,19 +49,25 @@ li .bi h4,
 }
 
 @media screen and (min-width: 570px) {
-  #home-carousel .carousel-caption {
+  #home-carousel .carousel-caption{
     width: fit-content;
+  }
+  #home-carousel .carousel-caption .top+div {
+  width: fit-content;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  #home-carousel .carousel-caption {
+    width: 60%;
+    top: 15%;
   }
 
   #home-carousel .carousel-caption .top+div {
     font-size: 4rem;
-
   }
-
-  #home-carousel .caption-content .text {}
-
 }
-
 
 /* owl-carousel */
 .owl-carousel {
