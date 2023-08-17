@@ -24,8 +24,12 @@ li .bi h4,
   color: red;
 }
 
-@media screen and (max-width:1200px) {
-  .top-nav li {
+#navbarLinks ul li {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+@media screen and (min-width:992px) {
+  #navbarLinks ul li {
     border: none;
   }
 }
