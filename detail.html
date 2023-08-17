@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./src/bxslider/jquery.bxslider.css">
   <!-- custom css -->
   <link rel="stylesheet" href="./src/css/index.css">
+  <link rel="stylesheet" href="./src/css/detail.css">
 </head>
 
 <body>
@@ -124,7 +125,7 @@
   </header>
 
   <main>
-    <div class="container mt-5">
+    <div class="container mt-3">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
           <li class="breadcrumb-item">
@@ -142,12 +143,30 @@
 
     <div class="container" id="">
       <div class="row">
-        <div class="col-12 col-md-4 border border-warning border-4">
+        <div class="col-12 col-md-4">
           <div class="image-container ">
             <img src="./src/Image/detail.jpg" alt="img-fulid d-block w-100">
           </div>
         </div>
-        <div class="col-12 col-md-6"></div>
+        <div class="col-12 col-md-8">
+          <h2 class="text-capitalize display-6 fw-semibold">here ditary</h2>
+          <p class="text-capitalize fs-5 text-body-emphasis">author : <span class="author">Christian Dior</span></p>
+          <a href="" class="text-decoration-none">Add Your Review</a>
+          <h3 class=""><span class="price display-4">$900</span> <small class="discount"><del>$900</del></small></h3>
+          <p class="text-capitalize"><span class="fs-4">category:</span> <span class="catagoriy">Biographies & Memoirs, Book Shop, Literature & Fiction ... </span></p>
+
+          <p id="bookdescription" class="lead fs-5">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+          </p>
+          <div class="cart-adder d-flex justify-content-start border border-2 border-warning">
+            <div id="cart-item-count" class="d-flex gap-2 m-0" style="flex: 2.8">
+              <button type="button" class="btn btn-outline-primary btn-lg rounded-circle"><i class="bi bi-dash"></i></button>
+              <input style="width: 25%" type="number" class="form-control rounded-pill text-center fs-1" name="noitem" value="0">
+              <button type="button" class="btn btn-outline-primary btn-lg rounded-circle"><i class="bi bi-plus-lg fw-semibold"></i></button>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg fs-5 text-uppercase rounded-pill" style="flex: 1">add to cart</button>
+          </div>
+        </div>
         <div class="col-12 col-md-6"></div>
       </div>
     </div>
