@@ -1,23 +1,3 @@
-var slickopts = {
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  rows: 3, // Removes the linear order. Would expect card 5 to be on next row, not stacked in groups.
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 776,
-      settings: {
-        slidesToShow: 1,
-        rows: 1 // This doesn't appear to work in responsive (Mac/Chrome)
-      }
-    }]
-};
-
 const image = [
       './src/Image/book2.jpeg',
       './src/Image/1_380x.jpeg',
@@ -25,10 +5,11 @@ const image = [
       './src/Image/1_380x.jpeg'
     ]
 
-const container = document.querySelector('#bestseller');
+const container = document.querySelector('#viewall');
 
 for (var i = 0; i < 12; i++) {
   const chaild = `
+         <div class="col">
            <div class="card shadow my-4">
               <img src="${image[Math.round((Math.random()*3))]}" alt="" class="card-img-top">
               <div class="card-body pb-5">
@@ -42,9 +23,7 @@ for (var i = 0; i < 12; i++) {
                 <a href="" class="btn btn-lg btn-outline-primary price">$400</a>
               </div>
             </div>
-                        `;
+          </div>             `;
 
   container.innerHTML += chaild;
 }
-
-$('.carousel').slick(slickopts);
