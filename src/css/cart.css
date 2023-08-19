@@ -1,24 +1,31 @@
-table{
+table {
   width: 100%;
 }
-tr,th,td{
+
+tr,
+th,
+td {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 30px;
   font-weight: lighter;
   text-align: center;
   border: 1px solid #636363
 }
-thead tr:first-child{
-  background: #C1C702
-}
-.item{}
-table td{
-padding: 0;
-}
-.quantity-seter{
-  border: 2px solid red 
+
+td .col {
+  background: #095CC9
 }
 
-tr th{
+.item {}
+
+table td {
+  padding: 0;
+}
+
+.quantity-seter {
+  border: 2px solid red
+}
+
+tr th {
   padding: 20px 0 40px;
 }

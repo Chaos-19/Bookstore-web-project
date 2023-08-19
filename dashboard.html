@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard</title>
+  <!-- Bootstrap core CSS -->
+  <link href="cdn_modules/bootstrap@5.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./src/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/dashboard.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="bi bi-book fs-1"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="nav" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3 mt-lg-0" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+        <div class="col">
+          <div class="card flex-row p-3 align-items-center gap-3 shadow">
+            <div class="icon ">
+              <i class="bi bi-person fs-1"></i>
+            </div>
+            <div>
+              <span class="display-3 fw-semibold d-block">5000</span>
+              <span class="fs-3 fw-semibold text-capitalize">users</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card flex-row p-3 align-items-center gap-3 shadow">
+            <div class="icon ">
+              <i class="bi bi-journals fs-1"></i>
+            </div>
+            <div>
+              <span class="display-3 fw-semibold d-block">4.8K</span>
+              <span class="fs-3 fw-semibold text-capitalize">books</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card flex-row p-3 align-items-center gap-3 shadow">
+            <div class="icon ">
+              <i class="bi bi-cart fs-1"></i>
+            </div>
+            <div>
+              <span class="display-3 fw-semibold d-block">1.2k</span>
+              <span class="fs-3 fw-semibold text-capitalize">sele</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card flex-row p-3 align-items-center gap-3 shadow">
+            <div class="icon ">
+              <i class="bi bi-laptop fs-1"></i>
+            </div>
+            <div>
+              <span class="display-3 fw-semibold d-block">5000</span>
+              <span class="fs-3 fw-semibold text-capitalize">users</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="cdn_modules/bootstrap@5.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
