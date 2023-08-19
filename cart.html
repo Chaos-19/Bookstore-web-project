@@ -9,11 +9,11 @@
   <title></title>
   <!-- Bootstrap core CSS -->
   <link href="cdn_modules/bootstrap@5.3.1/css/bootstrap.min.css" rel="stylesheet">
-<!--  <link href="./src/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./src/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <!-- owl-carousel -->
-  <!--  <link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.carousel.css" rel="stylesheet">
-<link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.theme.default.css" rel="stylesheet">
-<link href="cdn_modules/owl-carousel@1.3.3/owl.transitions.css" rel="stylesheet"> -->
+  <link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.carousel.css" rel="stylesheet">
+  <link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+  <link href="cdn_modules/owl-carousel@1.3.3/owl.transitions.css" rel="stylesheet">
   <!-- swiper -->
   <!--   <link rel="stylesheet" href="./src/bxslider/jquery.bxslider.css"> -->
   <!-- custom css -->
@@ -231,7 +231,7 @@
         </div>
         <div class="col-12">
           <h2 class="display-6">Add a note to your order</h2>
-          <textarea class="rounded-3" name="" id="" cols="50" rows="7"></textarea>
+          <textarea class="rounded-3" name="" id="" cols="" rows="7" id="cart-note"></textarea>
         </div>
         <div class="col-12">
           <div class="card">
@@ -260,26 +260,32 @@
           <div class="methods">
             <img src="./src/Image/footer-payment.png" alt="payment methods">
           </div>
-          <div class="shipping-cost mt-4">
+
+
+          <div class="accordion fs-1 mt-4" id="myaccordion">
             <div class="accordion-item">
-              <h4 class="accordion-header display-1">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Calculate Shipping
-                </button>
-              </h4>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body pt-3">
-                  <form action="">
-                    <div class="input-group">
-                      <select class="form-select" id="exampleSelect">
-                        <option selected>Ethiopia</option>
-                        <option value="1">USA</option>
-                        <option value="2">Addis ababa</option>
-                        <option value="3">Debre tabor</option>
-                      </select>
-                    </div>
-                  </form>
-                </div>
+              <h2 class="myaccordion-heading m-0">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#myaccordion-plaintext"><span class="display-5">Calculate shipping</span></button>
+              </h2>
+            </div>
+            <div id="myaccordion-plaintext" class="accordion-collapse collapse">
+              <div class="accordion-body p-0 pt-3">
+                <form action="input-group">
+                  <div class="input-group">
+                    <select class="form-select form-controlform-control-lg py-3 fs-3" id="country">
+                      <option selected>Ethiopia</option>
+                      <option value="1">USA</option>
+                      <option value="2">Addis ababa</option>
+                      <option value="3">Debre tabor</option>
+                    </select>
+                  </div>
+                  <div class="input-group mt-2">
+                    <input class="form-control form-control-lg fs-3" type="number" name="" id="" value="" placeholder="postal zip code " />
+                  </div>
+                  <div class="btn-container text-center py-3">
+                    <button class="btn btn-outline-primary btn-lg rounded-pill px-md-5 py-md-3" type="button">Calculate</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

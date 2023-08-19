@@ -56,5 +56,6 @@ tr th {
 #quantitySet input {
   width: 30%;
 }
-
-#cart-btns .clear {}
+.col-12 textarea{
+  width: 100%;
+}
