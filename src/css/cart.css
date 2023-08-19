@@ -1,3 +1,4 @@
+
 table {
   width: 100%;
 }
@@ -5,27 +6,57 @@ table {
 tr,
 th,
 td {
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 30px;
-  font-weight: lighter;
+  font-weight: 500;
   text-align: center;
-  border: 1px solid #636363
+}
+
+table tbody {
+  border: 1px solid #A9A9A9;
+  border-left: 0;
+  border-right: 0;
 }
 
 td .col {
-  background: #095CC9
+  
+  width: 180px;
 }
 
-.item {}
+td .col button {
+  padding: 20px;
+}
+
+td .row {
+  flex-basis: content;
+}
+
+td span {
+  font-size: 23px;
+}
 
 table td {
   padding: 0;
 }
 
-.quantity-seter {
-  border: 2px solid red
+tr th {
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+#cart-description{
+  padding: 15px 0;
+  border: 1px solid rgba(81, 81, 81, 1);
+  border-left: none;
+  border-right: none;
+}
+.cart-content {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.4;
+  text-transform: uppercase;
+  
 }
 
-tr th {
-  padding: 20px 0 40px;
+#quantitySet input {
+  width: 30%;
 }
+
+#cart-btns .clear {}

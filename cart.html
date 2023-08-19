@@ -146,7 +146,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 d-none d-md-block">
           <table>
             <thead>
               <tr>
@@ -156,30 +156,72 @@
                 <th>Total</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="">
               <tr>
-                <td>
-                  <div style="width: 100%"> <img src="./src/Image/1_380x.jpeg" alt="" width="80"> </div>
-                </td>
-                <td>
-                  $900
-                </td>
-                <td>
-
-                  <div class="col d-inline-flex">
-                    <button type="button" class="btn btn-outline-secondary flex-shrik-0"><i class="bi bi-chevron-up"></i></button>
-                    <input type="number" name="quantity" id="quantity" value="0" style="width:30%" class="form-control form-control-lg flex-grow-0 rounded-3 text-center" />
-                    <button type="button" class="btn btn-outline-secondary flex-shrik-0"><i class="bi bi-chevron-down"></i></button>
+                <td class="">
+                  <div class="container  py-5">
+                    <div class="row align-items-md-center p-0">
+                      <div class="col-3 p-0">
+                        <img id="bookimg" src="./src/Image/1_380x.jpeg" class="d-block w-100" alt="">
+                      </div>
+                      <div class="col-6 text-start content">
+                        <span class="d-block title">here ditary</span>
+                        <span class="d-block author">Charlie's ditary</span>
+                        <span class="d-block color">red</span>
+                      </div>
+                    </div>
                   </div>
                 </td>
-                <td>
-                  $1000
+                <td class="px-1">
+                  $900
+                </td>
+                <td class="px-1">
+
+                  <div class="col d-inline-flex border m-0">
+                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-chevron-up"></i></button>
+                    <input disabled type="number" name="quantity" id="quantity" value="50" class="form-control form-control-lg flex-grow-0 text-center" />
+                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-chevron-down"></i></button>
+                  </div>
+                </td>
+                <td class="px-2">
+                  $10000
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div class="col-12"></div>
+        <div class="col-12">
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-between">
+                <p>Total</p>
+                <p id="totalprice">1,6780.8</p>
+              </div>
+            </div>
+            <div class="row align-items-center" id="cart-description">
+              <div class="col-3 p-0">
+                <img id="bookimg" src="./src/Image/1_380x.jpeg" class="d-block w-100" alt="">
+              </div>
+              <div class="col-6 text-start cart-content">
+                <span class="d-block fs-4 title">here ditary</span>
+                <span class="d-block fs-6 author">Charlie's ditary</span>
+                <div class="col d-inline-flex mt-1" id="quantitySet">
+                  <button type="button" class="btn btn-outline-secondary btn-sm"><i class="bi bi-chevron-up"></i></button>
+                  <input disabled type="number" name="quantity" id="quantity" value="50" class="form-control form-control-sm text-center" />
+                  <button type="button" class="btn btn-outline-secondary btn-sm"><i class="bi bi-chevron-down"></i></button>
+                </div>
+                <span class="d-block mt-2 fs-3" id="totalprice">$1,6780.8</span>
+              </div>
+              <div class="col-2 ms-auto">
+                <button class="btn-close" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-between pt-4" id="cart-btns">
+          <button class="btn btn-outline-primary btn-lg fs-4 px-md-5 py-md-3 rounded-pill text-uppercase" type="button">continue Shopping</button>
+          <button class="btn btn-primary rounded-pill fs-4 px-md-5 text-uppercase" type="button">Clear Cart</button>
+        </div>
       </div>
     </div>
 
