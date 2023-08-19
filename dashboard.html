@@ -9,7 +9,10 @@
   <!-- Bootstrap core CSS -->
   <link href="cdn_modules/bootstrap@5.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="./src/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <!-- apexhart -->
+  <link rel="stylesheet" href="cdn_modules/apexcharts@3.41.1/apexcharts.min.css">
   <link rel="stylesheet" href="./src/css/dashboard.css">
+  
 </head>
 
 <body>
@@ -104,9 +107,17 @@
           </div>
         </div>
       </div>
+
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="apex-chart" id="apex-chart"></div>
+        </div>
+      </div>
     </div>
   </main>
   <script type="text/javascript" src="cdn_modules/bootstrap@5.3.1/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="cdn_modules/apexcharts@3.41.1/apexcharts.min.js"></script>
+  <script src="./src/js/dashboard.js"></script>
 </body>
 
 </html>
