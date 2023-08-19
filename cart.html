@@ -9,13 +9,13 @@
   <title></title>
   <!-- Bootstrap core CSS -->
   <link href="cdn_modules/bootstrap@5.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./src/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<!--  <link href="./src/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <!-- owl-carousel -->
-  <link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.carousel.css" rel="stylesheet">
-  <link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.theme.default.css" rel="stylesheet">
-  <link href="cdn_modules/owl-carousel@1.3.3/owl.transitions.css" rel="stylesheet">
+  <!--  <link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.carousel.css" rel="stylesheet">
+<link href="cdn_modules/OwlCarousel2@2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+<link href="cdn_modules/owl-carousel@1.3.3/owl.transitions.css" rel="stylesheet"> -->
   <!-- swiper -->
-  <link rel="stylesheet" href="./src/bxslider/jquery.bxslider.css">
+  <!--   <link rel="stylesheet" href="./src/bxslider/jquery.bxslider.css"> -->
   <!-- custom css -->
   <link rel="stylesheet" href="./src/css/index.css">
   <link rel="stylesheet" href="./src/css/cart.css">
@@ -156,12 +156,12 @@
                 <th>Total</th>
               </tr>
             </thead>
-            <tbody class="">
+            <tbody class="p-0">
               <tr>
-                <td class="">
+                <td class="p-0">
                   <div class="container  py-5">
-                    <div class="row align-items-md-center p-0">
-                      <div class="col-3 p-0">
+                    <div class="row m-0 align-items-md-center p-0">
+                      <div class="col-4 p-0">
                         <img id="bookimg" src="./src/Image/1_380x.jpeg" class="d-block w-100" alt="">
                       </div>
                       <div class="col-6 text-start content">
@@ -233,6 +233,58 @@
           <h2 class="display-6">Add a note to your order</h2>
           <textarea class="rounded-3" name="" id="" cols="50" rows="7"></textarea>
         </div>
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-primary py-3">
+              <h3 class="text-capitalize display-5 text-white">order summary</h3>
+            </div>
+            <div class="card-body">
+              <div class="item-description d-flex justify-content-between align-items-center fw-light">
+                <span class="text-capitalize d-block fs-1">subtotal(<span id="itemsNo">18</span>items)</span>
+                <span class="d-block fs-1" id="price">$16780.8</span>
+              </div>
+              <div class="form-check mt-3 d-flex align-items-center gap-3">
+                <input class="form-check-input p-md-3" type="checkbox" name="" id="box" />
+                <label class="form-check-label fs-3 fw-light" for="box">
+                  <a class="text-decoration-none" href="#">I agree with the terms and conditions</a>
+                </label>
+              </div>
+              <div class="btn-container text-center py-3">
+                <button class="btn btn-outline-primary btn-lg rounded-pill px-md-5 py-md-3" type="button">Proceed To Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <h3 class="display-6">Payment Methods</h3>
+          <div class="methods">
+            <img src="./src/Image/footer-payment.png" alt="payment methods">
+          </div>
+          <div class="shipping-cost mt-4">
+            <div class="accordion-item">
+              <h4 class="accordion-header display-1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Calculate Shipping
+                </button>
+              </h4>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body pt-3">
+                  <form action="">
+                    <div class="input-group">
+                      <select class="form-select" id="exampleSelect">
+                        <option selected>Ethiopia</option>
+                        <option value="1">USA</option>
+                        <option value="2">Addis ababa</option>
+                        <option value="3">Debre tabor</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
