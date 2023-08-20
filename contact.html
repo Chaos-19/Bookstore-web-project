@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="./src/css/index.css">
 </head>
 
-<body style="height: 100vh">
+<body>
 
   <header>
-    <nav class="navbar navbar-expand-lg p-0 navbar-light bg-light" aria-label="Fourth navbar example">
-      <div class="container-fluid m-0 p-0">
+    <nav class="navbar navbar-expand-lg p-0 navbar-light bg-light my-0" aria-label="navbar">
+      <div class="container-fluid m-0 p-0 d-flex flex-column">
 
         <div class="row gap-3 mx-0 px-0 pt-2 py-lg-3 w-100 justify-content-center justify-content-lg-around align-items-center">
 
@@ -34,40 +34,40 @@
             </form>
           </div>
 
-          <div class="col-12 col-lg-auto top-nav p-0">
+          <div class="col-12 col-lg-auto top-nav p-0" id="navbarLinks">
             <ul class="nav nav-pills nav-fill  flex-lg-row-reverse">
-              <li class="nav-item pt-2 border">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="true" aria-label="Toggle navigation">
+              <li class="nav-item pt-2 ">
+                <button class="navbar-toggler" id="navbarSideCollapse" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
                   <span class="navbar-toggler-icon"></span>
                 </button>
               </li>
-              <li class="nav-item border d-lg-none">
+              <li class="nav-item d-lg-none">
                 <a class="nav-link" aria-current="page" href="#">
                   <i class="bi bi-cart position-relative bagg">
                     <h3 class="position-absolute badge-top"><span class="badge rounded-pill bg-warning">0</span></h3>
                   </i>
                 </a>
               </li>
-              <li class="nav-item border">
+              <li class="nav-item">
                 <a class="nav-link" href="#">
                   <i class="bi bi-person"></i>
                 </a>
               </li>
-              <li class="nav-item border">
+              <li class="nav-item">
                 <a class="nav-link">
                   <i class="bi bi-heart position-relative">
                     <h3 class="position-absolute badge-top"><span class="badge rounded-pill bg-warning">0</span></h3>
                   </i>
                 </a>
               </li>
-              <li class="nav-item border">
+              <li class="nav-item">
                 <a class="nav-link" href="#">
                   <i class="bi bi-truck position-relative">
                     <h3 class="position-absolute badge-top"><span class="badge rounded-pill bg-warning">0</span></h3>
                   </i>
                 </a>
               </li>
-              <li class="nav-item border">
+              <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">
                   <i class="bi bi-cart position-relative">
                     <h3 class="position-absolute badge-top"><span class="badge rounded-pill bg-warning">0</span></h3>
@@ -77,10 +77,50 @@
             </ul>
           </div>
         </div>
+
+
+      <div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h2 class="offcanvas-title display-2 fw-semibold" id="offcanvasNavbar2Label">Menu</h2>
+            <button type="button" class="btn-close btn-close-dark fs-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body py-lg-2">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-2 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Books
+                </a>
+                <ul class="dropdown-menu fs-3">
+                  <li><a class="dropdown-item" href="#">Bestseller</a></li>
+                  <li><a class="dropdown-item" href="#">Top Rated</a></li>
+                  <li><a class="dropdown-item" href="#">Limited offer</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
       </div>
     </nav>
   </header>
-  
+
   <div class="container my-5">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
@@ -211,7 +251,6 @@
   </div>
 
   <script type="text/javascript" src="cdn_modules/bootstrap@5.3.1/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="cdn_modules/bootstrap@5.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

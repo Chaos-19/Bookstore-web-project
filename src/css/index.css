@@ -28,6 +28,12 @@ li .bi h4,
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
+@media screen and (max-width: 570px) {
+  #offcanvasNavbar2 {
+    width: 65%;
+  }
+}
+
 @media screen and (min-width:992px) {
   #navbarLinks ul li {
     border: none;
@@ -35,6 +41,15 @@ li .bi h4,
 }
 
 
+
+/*
+.offcanvas-body ul li a{
+ padding-left: 0px;
+}*/
+
+/*.offcanvas-body>ul>li>a {
+  color: white;
+}
 
 /* carousel-caption */
 
@@ -49,11 +64,12 @@ li .bi h4,
 }
 
 @media screen and (min-width: 570px) {
-  #home-carousel .carousel-caption{
+  #home-carousel .carousel-caption {
     width: fit-content;
   }
+
   #home-carousel .carousel-caption .top+div {
-  width: fit-content;
+    width: fit-content;
     font-size: 4rem;
   }
 }
