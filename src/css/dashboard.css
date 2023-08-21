@@ -12,22 +12,30 @@ h1 {
 
 /* Remove hover effect */
 #table-top .dropdown .dropdown-toggle:focus,
-#table-top .dropdown .dropdown-toggle:not(:focus), 
-#table-top .dropdown .dropdown-toggle:hover{
-  background-color: transparent;
-  color: #1692CB;
+/* #offcanvasToggler span:focus, */
+#offcanvasToggler:focus,
+/* #offcanvasToggler:active,
+#offcanvasToggler:not(:active),
+#offcanvasToggler span:active,  */
+/* #offcanvasToggler:not(:focus), */
+
+#table-top .dropdown .dropdown-toggle:not(:focus),
+#table-top .dropdown .dropdown-toggle:hover {
   border: none;
-  /* Change the color to your preference */
+  box-shadow: none;
 }
 
 /* Remove click effect */
 #table-top .dropdown .dropdown-toggle:active {
-  background-color: transparent;
-  color: #000;
   border: none;
-  /* Change the color to your preference */
   box-shadow: none;
 }
 
+@media screen and (max-width: 570px) {
+  #dashboard-offcanvas {
+    width: 60%;
+  }
+
+}
 
 .separator+.row>.col {}
