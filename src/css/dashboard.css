@@ -37,5 +37,15 @@ h1 {
   }
 
 }
+#nav-collpsed{
+  z-index: 9;
+}
 
-.separator+.row>.col {}
+@media (max-width: 750px) {
+  #nav-collpsed {
+    position: absolute;
+    width: 80%;
+    top: 101%;
+    margin: 0 auto;
+  }
+}
