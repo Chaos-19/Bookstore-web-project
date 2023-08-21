@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  
+
   <header>
     <nav class="navbar navbar-dark bg-dark fixed-top" aria-label="Offcanvas navbar large">
       <div class="container-fluid justify-content-between">
@@ -54,7 +54,7 @@
                 <i class="bi bi-bell"></i>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-md-none">
               <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#na" aria-expanded="false">
                 <i class="bi bi-search"></i>
               </a>
@@ -103,7 +103,7 @@
       </div>
     </nav>
   </header>
-
+<div class="separator py-4"></div>
   <main>
     <div class="container-fluid my-5">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
@@ -336,6 +336,36 @@
       </div>
 
   </main>
+
+  <!-- footer -->
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Company, Inc</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#">
+            <i class="bi bi-twitter fs-1"></i>
+          </a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#">
+            <i class="bi bi-instagram fs-1"></i>
+          </a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#">
+            <i class="bi bi-facebook fs-1"></i>
+          </a></li>
+      </ul>
+    </footer>
+  </div>
+
+
+
   <script type="text/javascript" src="cdn_modules/bootstrap@5.3.1/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="cdn_modules/moment.js@2.29.4/moment.min.js"></script>
   <script type="text/javascript" src="cdn_modules/jquery@3.7.0/jquery.slim.min.js"></script>
