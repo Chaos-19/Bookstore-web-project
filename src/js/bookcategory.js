@@ -56,4 +56,4 @@ function addActive() {
   })
 }
 
-document.addEventListener('DOMContentLoaded', addActive);
+//document.addEventListener('DOMContentLoaded', addActive);
