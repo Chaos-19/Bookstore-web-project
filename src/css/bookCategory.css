@@ -1,0 +1,13 @@
+.table thead tr th .head {
+  padding: 0;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active{
+ color: #000000;
+ font-weight: bolder;
+ font-size: 20px;
+}
