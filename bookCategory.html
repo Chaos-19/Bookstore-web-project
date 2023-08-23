@@ -112,8 +112,56 @@
         <div class="col border shadow rounded py-3 px-0">
           <div class="top d-flex justify-content-between align-items-center border-bottom py-4 px-3">
             <h5>Catagoriy List</h5>
-            <button class="btn btn-primary d-inline-flex align-items-center" type="button">Add New Category
+            <button class="btn btn-primary d-inline-flex align-items-center" type="button" data-bs-toggle="modal" data-bs-target="#modalAddCategory">Add New Category
             </button>
+            
+
+        <div class="modal fade" id="modalAddCategory" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="addCategory">Add New  Category</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-md-flex align-items-center">
+
+                    <div class="container">
+
+                      <div class="row p-0">
+                        <div class="col">
+                          <form action="" class="my-3">
+                            <div class="form-group">
+                              <label for="categoryname" class="form-label fs-4">Category Name :</label>
+                              <input type="text" class="form-control form-control-lg" name="categoryname">
+                            </div>
+                            <div class="form-group mt-3">
+                              <label for="categorydescription" class="form-label fs-4">Category Description :</label>
+                              <textarea name="bookdescription" id="categorydescription" rows="7" class="w-100 border border-warning rounded-2 ps-2"></textarea>
+                            </div>
+                            <div class="form-group my-3">
+                              <input type="submit" name="submit" id="submit" value="Add book" class="btn btn-outline-primary btn-lg d-none d-md-block"/>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-outline-primary d-md-none">Add Book</button>
+                    
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
           </div>
           <div class="sub my-3 px-3 py-4">
             <div class="entries d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center">
