@@ -112,12 +112,79 @@
         <div class="col border shadow rounded py-3 px-0">
           <div class="top d-flex justify-content-between align-items-center border-bottom py-4 px-3">
             <h5>Book List</h5>
-            <button class="btn btn-primary d-inline-flex align-items-center" type="button">Add New Book
+            <button class="btn btn-primary d-inline-flex align-items-center" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">Add New Book
             </button>
+
+            <div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="exampleModalFullscreenLabel">Add New Book</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-md-flex align-items-center">
+
+                    <div class="container">
+
+                      <div class="row p-0">
+                        <div class="col">
+                          <form action="" class="my-3">
+                            <div class="form-group">
+                              <label for="bookname" class="form-label fs-4">Book Name :</label>
+                              <input type="text" class="form-control form-control-lg" name="bookname">
+                            </div>
+                            <div class="form-group mt-3">
+                              <label for="category" class="form-label fs-4">Book Category</label>
+                              <select class="form-select form-control-lg" id="category" name="bookcategory">
+                                <option>Book Category</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                            <div class="form-group mt-3">
+                              <label for="bookAuthor" class="form-label fs-4">Book Author</label>
+                              <input type="text" class="form-control form-control-lg" name="bookAuthor">
+                            </div>
+                            <div class="form-group mt-4">
+                              <label for="bookimage" class="form-label fs-4">Book Image:</label>
+                              <input type="file" class="form-control form-control-lg" name="bookimage">
+                            </div>
+                            <div class="form-group mt-3">
+                              <label for="bookprice" class="form-label fs-4">Book Price:</label>
+                              <input type="number" class="form-control form-control-lg" name="bookprice">
+                            </div>
+
+                            <div class="form-group mt-3">
+                              <label for="bookdescription" class="form-label fs-4">Book Description :</label>
+                              <textarea name="bookdescription" id="bookdescription" rows="7" class="w-100 border border-warning rounded-2 ps-2"></textarea>
+                            </div>
+                            <div class="form-group my-3">
+                              <input type="submit" name="submit" id="submit" value="Add book" class="btn btn-outline-primary btn-lg d-none d-md-block"/>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-outline-primary d-md-none">Add Book</button>
+                    
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
           </div>
           <div class="sub my-3 px-3 py-4">
             <div class="entries d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center">
               <div class="d-flex flex-row justify-content-center justify-content-md-start align-items-center fs-5">show
+
                 <input list="entriesNo" class="form-control  fs-6 mx-2" style="width:15%;">
                 <datalist id="entriesNo">
                   <option value="1"></option>
