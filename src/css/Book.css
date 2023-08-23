@@ -7,6 +7,13 @@
   align-items: center;
 }
 
+.table tbody tr td {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle !important;
+}
+
 .active {
   color: #000000;
   font-weight: bolder;
