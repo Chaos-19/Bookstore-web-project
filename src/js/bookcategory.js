@@ -25,35 +25,40 @@ document.addEventListener('DOMContentLoaded', function() {
   expandNavbarOnBreakpoint();
 })
 
-const tebleListOrderBtn = [...document.querySelectorAll('.order')];
+const selectElement = (element, selector, all = false) => {
+  return all ? element.querySelectorAll(selector) : element.querySelector(selector);
+}
+
+const checkForClass = (element, classSelector) => {
+  return element.classList.contains(classSelector);
+}
+
+const addClass = (element, nameClass) => element.classList.add(nameClass);
+
+const removeClass = (element, nameClass) => element.classList.remove(nameClass);
+
+
+
+const tebleListOrderBtn = selectElement(document, 'table th', true);
 
 tebleListOrderBtn.forEach((v, index) => {
 
-  let clicked = false;
-
   v.addEventListener('click', function(e) {
-    
-    //e.target.classList.add('border');
-    
-    if (!clicked) {
-      e.target.querySelector('.bi-arrow-up').classList.remove('active');
-      e.target.querySelector('.bi-arrow-down').classList.add('active');
-      clicked = true;
+
+    const element = tebleListOrderBtn[index];
+    const orderIndicator = [...selectElement(element, '.order .bi', true)]
+
+    if (!checkForClass(orderIndicator[0], 'active')) {
+      addClass(orderIndicator[0], 'active');
+      if (checkForClass(orderIndicator[1], 'active')) {
+        removeClass(orderIndicator[1], 'active')
+      }
     } else {
-      e.target.querySelector('.bi-arrow-up').classList.add('active');
-      e.target.querySelector('.bi-arrow-down').classList.remove('active');
-      clicked = false;
+      addClass(orderIndicator[1], 'active');
+      if (checkForClass(orderIndicator[0], 'active')) {
+        removeClass(orderIndicator[0], 'active')
+      }
     }
 
   })
 })
-console.log(tebleListOrderBtn);
-
-function addActive() {
-  tebleListOrderBtn.forEach(v => {
-    v.querySelector('.bi-arrow-up').classList.add('active');
-    console.log(v);
-  })
-}
-
-//document.addEventListener('DOMContentLoaded', addActive);
