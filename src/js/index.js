@@ -143,7 +143,8 @@
 
   $('.bxslider').bxSlider({
     mode: 'fade',
-    pagerCustom: '#bx-pager'
+    pagerCustom: '#bx-pager',
+    controls:false,
   });
 
   const image = [
