@@ -54,10 +54,25 @@
                   </i>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-person"></i>
                 </a>
+                <ul class="dropdown-menu" aria-labelledby="userProfileDropdown">
+                  <li><span class="dropdown-header text-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                      </svg>
+                    </span></li>
+                  <li><span class="dropdown-item">User: john@example.com</span></li>
+                  <li><span class="dropdown-item">Email: john@example.com</span>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link">
@@ -642,17 +657,17 @@
             <p>&copy; 2023 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
               <li class="ms-3"><a class="link-body-emphasis" href="#">
-             <i class="bi bi-twitter"></i></a></li>
+                  <i class="bi bi-twitter"></i></a></li>
               <li class="ms-3"><a class="link-body-emphasis" href="#">
-               <i class="bi bi-instagram"></i></a></li>
+                  <i class="bi bi-instagram"></i></a></li>
               <li class="ms-3"><a class="link-body-emphasis" href="#">
-               <i class="bi bi-facebook"></i></a></li>
+                  <i class="bi bi-facebook"></i></a></li>
             </ul>
           </div>
       </footer>
     </div>
   </div>
-</div>
+  </div>
   <script type="text/javascript" src="cdn_modules/bootstrap@5.3.1/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="cdn_modules/jquery@3.7.0/jquery.min.js"></script>
   <script type="text/javascript" src="cdn_modules/OwlCarousel2@2.3.4/owl.carousel.min.js"></script>

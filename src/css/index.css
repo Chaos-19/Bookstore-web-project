@@ -24,7 +24,7 @@ li .bi h4,
   color: red;
 }
 
-#navbarLinks ul li {
+#navbarLinks > ul > li {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -35,7 +35,7 @@ li .bi h4,
 }
 
 @media screen and (min-width:992px) {
-  #navbarLinks ul li {
+  #navbarLinks ul > li {
     border: none;
   }
 }
