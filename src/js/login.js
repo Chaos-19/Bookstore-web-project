@@ -63,3 +63,5 @@ document.querySelectorAll('input').forEach((v, i) => {
       }
     })
 })
+
+c
