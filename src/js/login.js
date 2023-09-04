@@ -30,16 +30,23 @@ async function main(url, query) {
       query,
       "POST");
 
+
     if (result) {
+      const data = JSON.parse(result.data);
+
       if (result.user) {
-        let data = JSON.parse(result.data);
         if (result.verified) {
-          window.location.href = "./index.html";
+          if (result.role.match("user")) {
+            window.location.href = "./index.html";
+          } else if (result.role.match("admin")) {
+            window.location.href = "./dashboard.html";
+          }
         } else {
           displayError(data.message, true);
         }
-      } else {
-        displayError(result.data, true);
+      }
+      else {
+        displayError(result.message, true);
       }
     } else {
       displayError("There was an error with the Network", ttrue);
