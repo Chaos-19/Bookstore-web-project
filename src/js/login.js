@@ -34,8 +34,7 @@ async function main(url, query) {
       if (result.user) {
         let data = JSON.parse(result.data);
         if (result.verified) {
-          var userInfo = data;
-          displayError('successfully Login welcome', true)
+          window.location.href = "./index.html";
         } else {
           displayError(data.message, true);
         }

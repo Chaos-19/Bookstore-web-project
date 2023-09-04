@@ -1,3 +1,22 @@
+ document.addEventListener("DOMContentLoaded", function () {
+  fetch("./src/php/check_authentication.php")
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.authorized) {
+        alert(data.user_name);
+        document.querySelector("#user_profile #user-id").textContent =
+          data.user_id;
+        document.querySelector("#user_profile #user-name").textContent =
+          data.user_name;
+        document.querySelector("#user_profile #user-email").textContent =
+          data.user_email;
+      } else {
+        window.location.href = "./Login.html";
+      }
+    })
+    .catch((error) => alert(error));
+});
+ 
   $(document).ready(function() {
 
     $("#features").owlCarousel({
