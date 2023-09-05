@@ -24,7 +24,7 @@ li .bi h4,
   color: red;
 }
 
-#navbarLinks > ul > li {
+#navbarLinks>ul>li {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -35,7 +35,7 @@ li .bi h4,
 }
 
 @media screen and (min-width:992px) {
-  #navbarLinks ul > li {
+  #navbarLinks ul>li {
     border: none;
   }
 }
@@ -113,7 +113,7 @@ li .bi h4,
   -ms-transform: scaleX(-1);
 }
 
-#owl-demo .item {
+/* #owl-demo .item {
   background: #a1def8;
   padding: 30px 0px;
   display: block;
@@ -138,6 +138,65 @@ li .bi h4,
 .owl-next.disable {
   display: none !important;
 }
+ */
+/* book  card */
+
+#book-card .rating {
+  display: flex;
+  justify-content: center;
+}
+
+#book-card .rating input {
+  display: none;
+}
+
+#book-card .rating label {
+  color: #ccc;
+  font-size: 2rem;
+}
+
+#book-card .rating label:hover,
+#book-card .rating label:hover~label,
+#book-card .rating input:checked~label {
+  color: #f0ad4e;
+}
+
+#book-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#book-card:hover .overlay {
+  opacity: 1;
+}
+
+#book-card {
+  height: 33.5rem;
+}
+
+#book-card .social-media {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#book-card .social-media a {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#book-card .social-media i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* end */
 
 
 /* banner */
