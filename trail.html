@@ -111,10 +111,316 @@
     </nav>
   </header>
 
+  <div class="card" style="width: 18rem;">
+    <img src="./src/Image/1_380x.jpeg" height="400" class="card-img-top" alt="Book 1">
+    <div class="card-body">
+      <h5 class="card-title">Book Title</h5>
+      <p class="card-text">Author Name</p>
+      <p class="card-text"><span class="text-danger">$57.99</span> <del class="text-muted">$70.65</del></p>
+      <div class="d-flex justify-content-between">
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a href="#" class="btn btn-outline-secondary"><i class="bi bi-heart"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="separator py-5 my-5"></div>
+  <div class="card" style="width: 18rem;">
+    <img src="/src/Image/1_380x.jpeg" class="card-img-top" alt="Book 1">
+    <div class="card-body">
+      <h5 class="card-title">Book Title</h5>
+      <p class="card-text">Author Name</p>
+      <p class="card-text"><span class="text-danger">$57.99</span> <del class="text-muted">$70.65</del></p>
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a href="#" class="btn btn-outline-secondary"><i class="bi bi-heart"></i></a>
+      </div>
+      <div class="rating">
+        <input type="radio" name="rating" id="rating-5">
+        <label for="rating-5"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-4">
+        <label for="rating-4"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-3">
+        <label for="rating-3"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-2">
+        <label for="rating-2"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-1">
+        <label for="rating-1"><i class="bi bi-star-fill"></i></label>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .rating {
+      display: flex;
+      justify-content: center;
+    }
+
+    .rating input {
+      display: none;
+    }
+
+    .rating label {
+      color: #ccc;
+      font-size: 2rem;
+    }
+
+    .rating label:hover,
+    .rating label:hover~label,
+    .rating input:checked~label {
+      color: #f0ad4e;
+    }
+  </style>
+  <div class="separator py-5 my-5"></div>
+
+  <div class="card" style="width: 18rem; position: relative;">
+    <img src="/src/Image/1_380x.jpeg" class="card-img-top" alt="Book 1">
+    <div class="card-body">
+      <h5 class="card-title">Book Title</h5>
+      <p class="card-text">Author Name</p>
+      <p class="card-text"><span class="text-danger">$57.99</span> <del class="text-muted">$70.65</del></p>
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a href="#" class="btn btn-outline-secondary"><i class="bi bi-heart"></i></a>
+      </div>
+      <div class="rating">
+        <input type="radio" name="rating" id="rating-5">
+        <label for="rating-5"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-4">
+        <label for="rating-4"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-3">
+        <label for="rating-3"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-2">
+        <label for="rating-2"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-1">
+        <label for="rating-1"><i class="bi bi-star-fill"></i></label>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <style>
+    .rating {
+      display: flex;
+      justify-content: center;
+    }
+
+    .rating input {
+      display: none;
+    }
+
+    .rating label {
+      color: #ccc;
+      font-size: 2rem;
+    }
+
+    .rating label:hover,
+    .rating label:hover~label,
+    .rating input:checked~label {
+      color: #f0ad4e;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .card:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+  <div class="separator my-5"></div>
+  <div class="card" style="width: 18rem; position: relative;">
+    <img src="/src/Image/1_380x.jpeg" class="card-img-top" alt="Book 1">
+    <div class="card-body">
+      <h5 class="card-title">Book Title</h5>
+      <p class="card-text">Author Name</p>
+      <p class="card-text"><span class="text-danger">$57.99</span> <del class="text-muted">$70.65</del></p>
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a href="#" class="btn btn-outline-secondary"><i class="bi bi-heart"></i></a>
+      </div>
+      <div class="rating">
+        <input type="radio" name="rating" id="rating-5">
+        <label for="rating-5"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-4">
+        <label for="rating-4"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-3">
+        <label for="rating-3"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-2">
+        <label for="rating-2"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-1">
+        <label for="rating-1"><i class="bi bi-star-fill"></i></label>
+      </div>
+    </div>
+    <div class="overlay">
+      <p class="card-text mt-3 text-white">This book is a thrilling and captivating story of love, betrayal, and redemption. It follows the lives of two characters who are drawn together by fate, but torn apart by secrets. The book has received rave reviews from critics and readers alike, who praise its plot twists, character development, and emotional depth. You won't be able to put it down once you start reading it.</p>
+    </div>
+    <div class="social-media">
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+
+  <style>
+    .rating {
+      display: flex;
+      justify-content: center;
+    }
+
+    .rating input {
+      display: none;
+    }
+
+    .rating label {
+      color: #ccc;
+      font-size: 2rem;
+    }
+
+    .rating label:hover,
+    .rating label:hover~label,
+    .rating input:checked~label {
+      color: #f0ad4e;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .card:hover .overlay {
+      opacity: 1;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+    }
+
+    .social-media {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .social-media a {
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    .social-media i {
+      color: white;
+      font-size: 1.5rem;
+    }
+  </style>
+
+
+  <div class="separator my-5"></div>
+  <div class="card mx-auto" style="width: 18rem;" id="book-card">
+    <div class="position-relative">
+      <div class="overlay rounded-top">
+        <div class="social-media">
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+      <img src="/src/Image/1_380x.jpeg" class="card-img-top" alt="Book 1">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Book Title</h5>
+      <p class="card-text">Author Name</p>
+      <p class="card-text"><span class="text-danger">$57.99</span> <del class="text-muted">$70.65</del></p>
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="#" class="btn btn-success">Add to Cart</a>
+        <a href="#" class="btn btn-outline-secondary"><i class="bi bi-heart"></i></a>
+      </div>
+      <div class="rating">
+        <input type="radio" name="rating" id="rating-5">
+        <label for="rating-5"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-4">
+        <label for="rating-4"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-3">
+        <label for="rating-3"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-2">
+        <label for="rating-2"><i class="bi bi-star-fill"></i></label>
+        <input type="radio" name="rating" id="rating-1">
+        <label for="rating-1"><i class="bi bi-star-fill"></i></label>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .rating {
+      display: flex;
+      justify-content: center;
+    }
+
+    .rating input {
+      display: none;
+    }
+
+    .rating label {
+      color: #ccc;
+      font-size: 2rem;
+    }
+
+    .rating label:hover,
+    .rating label:hover~label,
+    .rating input:checked~label {
+      color: #f0ad4e;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    #book-card:hover .overlay {
+      opacity: 1;
+    }
+
+    #book-card:hover {}
+
+    .social-media {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .social-media a {
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    .social-media i {
+      color: white;
+      font-size: 1.5rem;
+    }
+  </style>
+
+
 
   <script type="text/javascript" src="cdn_modules/bootstrap@5.3.1/js/bootstrap.bundle.min.js"></script>
   <script>
-    
+
   </script>
 </body>
 
