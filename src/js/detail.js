@@ -1,3 +1,33 @@
+const urlParams = new URLSearchParams(window.location.search);
+
+const bookId = urlParams.get("book_Id");
+
+const url = `./src/php/get_book_details.php?q=${Number(bookId) + 2}`;
+
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+    alert(bookId);
+    const book = data.result[0];
+    localStorage.setItem("response", JSON.stringify(data));
+    document.querySelector(".image-container").innerHTML = book.book_image;
+    document.querySelector("#book-title").textContent = book.book_title;
+    document.querySelector(".author").textContent = book.book_author;
+    document.querySelector("#bookdescription").textContent =
+      book.book_description;
+
+    document.querySelector("span.category").textContent = book.book_category;
+    document.querySelector(".price").textContent = book.book_price;
+
+    document.querySelector("#author").textContent = book.book_author;
+    document.querySelector("#title").textContent = book.book_title;
+  })
+  .catch((error) => {
+    alert("An error occurred:", error);
+  });
+
+
+
  // Owlcarousel
  $(document).ready(function() {
 
